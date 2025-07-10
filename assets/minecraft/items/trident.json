@@ -4,8 +4,21 @@
     "cases": [
       {
         "model": {
-          "type": "minecraft:model",
-          "model": "minecraft:item/trident"
+          "type": "minecraft:range_dispatch",
+          "property": "minecraft:custom_model_data",
+          "entries": [
+            {
+              "threshold": 10000000,
+              "model": {
+                "type": "model",
+                "model": "item/custom/weaponsking"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/trident"
+          }
         },
         "when": [
           "gui",
@@ -17,17 +30,43 @@
     "fallback": {
       "type": "minecraft:condition",
       "on_false": {
-        "type": "minecraft:special",
-        "base": "minecraft:item/trident_in_hand",
-        "model": {
-          "type": "minecraft:trident"
+        "type": "minecraft:range_dispatch",
+        "property": "minecraft:custom_model_data",
+        "entries": [
+          {
+            "threshold": 10000000,
+            "model": {
+              "type": "model",
+              "model": "item/custom/weaponsking_in_hand"
+            }
+          }
+        ],
+        "fallback": {
+          "type": "minecraft:special",
+          "base": "minecraft:item/trident_in_hand",
+          "model": {
+            "type": "minecraft:trident"
+          }
         }
       },
       "on_true": {
-        "type": "minecraft:special",
-        "base": "minecraft:item/trident_throwing",
-        "model": {
-          "type": "minecraft:trident"
+        "type": "minecraft:range_dispatch",
+        "property": "minecraft:custom_model_data",
+        "entries": [
+          {
+            "threshold": 10000000,
+            "model": {
+              "type": "model",
+              "model": "item/custom/weaponsking_throwing"
+            }
+          }
+        ],
+        "fallback": {
+          "type": "minecraft:special",
+          "base": "minecraft:item/trident_throwing",
+          "model": {
+            "type": "minecraft:trident"
+          }
         }
       },
       "property": "minecraft:using_item"

@@ -29,8 +29,5 @@
 	},
   "textures": {
     "layer0": "minecraft:item/netherite_hoe"
-  },
-    "overrides": [
-		{"predicate": {"custom_model_data": 10000000},"model": "item/custom/weaponsking"}
-    ]
+  }
 }

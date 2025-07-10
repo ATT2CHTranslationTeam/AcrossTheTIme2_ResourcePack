@@ -1,6 +1,19 @@
 {
   "model": {
-    "type": "minecraft:model",
-    "model": "minecraft:item/netherite_hoe"
+    "type": "range_dispatch",
+    "property": "custom_model_data",
+    "fallback": {
+      "type": "model",
+      "model": "minecraft:item/netherite_hoe"
+    },
+    "entries": [
+      {
+        "threshold": 10000000,
+        "model": {
+          "type": "model",
+          "model": "item/custom/weaponsking"
+        }
+      }
+    ]
   }
 }
