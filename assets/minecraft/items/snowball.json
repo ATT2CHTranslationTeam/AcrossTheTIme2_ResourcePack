@@ -1,6 +1,19 @@
 {
-  "model": {
-    "type": "minecraft:model",
-    "model": "minecraft:item/snowball"
-  }
+        "model": {
+        "type": "range_dispatch",
+        "property": "custom_model_data",
+        "fallback": {
+            "type": "model",
+            "model": "minecraft:item/snowball"
+        },
+        "entries": [
+            {"threshold":10000000,"model":{"type":"model","model":"item/custom/magic_sphere_cast"}},
+            {"threshold":10000001,"model":{"type":"model","model":"item/custom/bait/com"}},
+            {"threshold":10000002,"model":{"type":"model","model":"item/custom/bait/unc"}},
+            {"threshold":10000003,"model":{"type":"model","model":"item/custom/bait/rar"}},
+            {"threshold":10000004,"model":{"type":"model","model":"item/custom/bait/epi"}},
+            {"threshold":10000005,"model":{"type":"model","model":"item/custom/bait/leg"}},
+            {"threshold":10000006,"model":{"type":"model","model":"item/custom/bait/ult"}}
+        ]
+    }
 }

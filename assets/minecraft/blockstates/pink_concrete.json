@@ -1,5 +1,7 @@
 {
     "variants": {
-        "": { "model": "block/custom/sky_dirt" }
+        "": {
+            "model": "minecraft:block/custom/sky_dirt"
+        }
     }
 }

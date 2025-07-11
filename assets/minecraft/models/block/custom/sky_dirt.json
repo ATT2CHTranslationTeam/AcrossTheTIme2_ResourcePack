@@ -1,6 +1,6 @@
 {
-    "parent": "block/cube_all",
+    "parent": "minecraft:block/cube_all",
     "textures": {
-        "all": "block/custom/sky_dirt"
+        "all": "minecraft:block/custom/sky_dirt"
     }
 }
