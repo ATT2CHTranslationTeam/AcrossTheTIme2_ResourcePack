@@ -1,0 +1,6 @@
+{
+    "parent": "item/custom/healthbar_display",
+    "textures": {
+        "layer0": "item/custom/healthbar/red_background"
+    }
+}
