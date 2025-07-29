@@ -2,14 +2,14 @@
 	"credit": "Made with Blockbench",
 	"parent": "minecraft:item/handheld",
 	"textures": {
-		"0": "item/custom/healthbar/100",
-		"particle": "item/custom/healthbar/100"
+		"0": "item/custom/map/fenrir",
+		"particle": "item/custom/map/fenrir"
 	},
 	"gui_light": "front",
 	"display": {
 		"thirdperson_righthand": {
-			"rotation": [11, -90, 55],
-			"translation": [-0.7, 3, 0.75],
+			"rotation": [37, 24, 55],
+			"translation": [-0.7, 8.75, 0.75],
 			"scale": [1.75, 1.75, 1.75]
 		},
 		"thirdperson_lefthand": {
