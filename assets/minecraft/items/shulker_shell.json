@@ -7,6 +7,25 @@
       "model": "minecraft:item/shulker_shell"
     },
     "entries": [
+      {"threshold": 1,"model": {"type": "model","model": "item/custom/healthbar/green_background"}},
+      {"threshold": 2,"model": {"type": "model","model": "item/custom/healthbar/green_progress"}},
+      {"threshold": 3,"model": {"type": "model","model": "item/custom/healthbar/dark_green_background"}},
+      {"threshold": 4,"model": {"type": "model","model": "item/custom/healthbar/dark_green_progress"}},
+      {"threshold": 5,"model": {"type": "model","model": "item/custom/healthbar/dark_yellow_background"}},
+      {"threshold": 6,"model": {"type": "model","model": "item/custom/healthbar/dark_yellow_progress"}},
+      {"threshold": 7,"model": {"type": "model","model": "item/custom/healthbar/orange_background"}},
+      {"threshold": 8,"model": {"type": "model","model": "item/custom/healthbar/orange_progress"}},
+      {"threshold": 9,"model": {"type": "model","model": "item/custom/healthbar/red_background"}},
+      {"threshold": 10,"model": {"type": "model","model": "item/custom/healthbar/red_progress"}},
+      {"threshold": 11,"model": {"type": "model","model": "item/custom/healthbar/dark_red_background"}},
+      {"threshold": 12,"model": {"type": "model","model": "item/custom/healthbar/dark_red_progress"}},
+      {"threshold": 13,"model": {"type": "model","model": "item/custom/healthbar/blue_background"}},
+      {"threshold": 14,"model": {"type": "model","model": "item/custom/healthbar/blue_progress"}},
+      {"threshold": 15,"model": {"type": "model","model": "item/custom/healthbar/dark_blue_background"}},
+      {"threshold": 16,"model": {"type": "model","model": "item/custom/healthbar/dark_blue_progress"}},
+      {"threshold": 17,"model": {"type": "model","model": "item/custom/healthbar/dark_aqua_background"}},
+      {"threshold": 18,"model": {"type": "model","model": "item/custom/healthbar/dark_aqua_progress"}},
+
       {"threshold": 10000000,"model": {"type": "model","model": "item/custom/page_pr"}},{"threshold": 10000001,"model": {"type": "model","model": "item/custom/page_drop"}},{"threshold": 10000002,"model": {"type": "model","model": "item/custom/page_ne"}}
     ]
   }

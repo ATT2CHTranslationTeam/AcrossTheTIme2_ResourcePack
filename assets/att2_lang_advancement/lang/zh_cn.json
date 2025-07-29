@@ -54,6 +54,9 @@
   "att2.advancement.collection.title.helmet_all": "头盔收藏家",
   "att2.advancement.collection.description.helmet_all": "获得所有的头盔",
 
+  "att2.advancement.collection.title.fishing_all": "渔具收藏家",
+  "att2.advancement.collection.description.fishing_all": "获得所有的渔具",
+
   "att2.advancement.collection.title.leggings_all": "护腿收藏家",
   "att2.advancement.collection.description.leggings_all": "获得所有的护腿",
 
@@ -65,6 +68,9 @@
 
   "att2.advancement.collection.title.mythique": "神话",
   "att2.advancement.collection.description.mythique": "武器",
+  
+  "att2.advancement.collection.title.fishing": "钓鱼",
+  "att2.advancement.collection.description.fishing": "渔具",
 
   "att2.advancement.collection.title.myt_all": "神话装备收藏家",
   "att2.advancement.collection.description.myt_all": "获得所有的神话装备",
@@ -2322,6 +2328,42 @@
   "att2.advancement.collection.weapon_wooden.title.shield_63": "勇气之盾",
   "att2.advancement.collection.weapon_wooden.description.shield_63": "这是最优秀者的美德，因为他们才是那些实现了不可能之事的人",
 
+  "att2.advancement.collection.fishing.bait.title.com": "§7§l普通鱼饵",
+  "att2.advancement.collection.fishing.bait.description.com": "§7§l饵不对口",
+
+  "att2.advancement.collection.fishing.bait.title.unc": "§2§l常见鱼饵",
+  "att2.advancement.collection.fishing.bait.description.unc": "§7§l饵不对口",
+
+  "att2.advancement.collection.fishing.bait.title.rar": "§9§l稀有鱼饵",
+  "att2.advancement.collection.fishing.bait.description.rar": "§7§l饵不对口",
+
+  "att2.advancement.collection.fishing.bait.title.epi": "§d§l史诗鱼饵",
+  "att2.advancement.collection.fishing.bait.description.epi": "§7§l饵不对口",
+
+  "att2.advancement.collection.fishing.bait.title.leg": "§6§l传说鱼饵",
+  "att2.advancement.collection.fishing.bait.description.leg": "§7§l饵不对口",
+
+  "att2.advancement.collection.fishing.bait.title.ult": "§a§l终极鱼饵",
+  "att2.advancement.collection.fishing.bait.description.ult": "§7§l饵不对口",
+
+  "att2.advancement.collection.fishing.rod.title.com": "§7§l竹枝钓竿",
+  "att2.advancement.collection.fishing.rod.description.com": "§7§l极简，耐用性差，依赖天然材料",
+
+  "att2.advancement.collection.fishing.rod.title.unc": "§2§l单节竹制钓竿",
+  "att2.advancement.collection.fishing.rod.description.unc": "§7§l轻便但易裂",
+
+  "att2.advancement.collection.fishing.rod.title.rar": "§9§l多节接驳竹竿",
+  "att2.advancement.collection.fishing.rod.description.rar": "§7§l便携性提升，接口处易磨损",
+
+  "att2.advancement.collection.fishing.rod.title.epi": "§d§l漆艺竹制钓竿",
+  "att2.advancement.collection.fishing.rod.description.epi": "§7§l工艺复杂，弹性与强度平衡，价格昂贵",
+
+  "att2.advancement.collection.fishing.rod.title.leg": "§6§l格林德尔钓竿",
+  "att2.advancement.collection.fishing.rod.description.leg": "§7§l强度极高，但非常沉重",
+
+  "att2.advancement.collection.fishing.rod.title.ult": "§a§l六拼竹制钓竿",
+  "att2.advancement.collection.fishing.rod.description.ult": "§7§l工艺巅峰，灵敏度与强度俱佳，收藏级",
+
   "冒险":"adventure",
 
   "att2.advancement.adventure.title.apotheosis":"贤者时间",
@@ -2729,8 +2771,8 @@
 
   "收藏家":"collection",
 
-  "att2.advancement.collection.title.XXX":"XXX",
-  "att2.advancement.collection.description.XXX":"XXX",
+  "att2.advancement.collection.title.XXX":"",
+  "att2.advancement.collection.description.XXX":"",
 
   "战斗！":"combat",
 
@@ -5056,6 +5098,21 @@
   "att2.advancement.progress.title.climb_500000":"触及星尘",
   "att2.advancement.progress.description.climb_500000":"攀爬5千米",
 
+  "att2.advancement.progress.title.enchantments_1":"初识附魔",
+  "att2.advancement.progress.description.enchantments_1":"进行1次附魔",
+  
+  "att2.advancement.progress.title.enchantments_5":"入门附魔",
+  "att2.advancement.progress.description.enchantments_5":"进行5次附魔",
+  
+  "att2.advancement.progress.title.enchantments_25":"习得附魔",
+  "att2.advancement.progress.description.enchantments_25":"进行25次附魔",
+  
+  "att2.advancement.progress.title.enchantments_50":"掌握附魔",
+  "att2.advancement.progress.description.enchantments_50":"进行50次附魔",
+  
+  "att2.advancement.progress.title.enchantments_100":"精通附魔",
+  "att2.advancement.progress.description.enchantments_100":"进行100次附魔",
+
   "att2.advancement.progress.title.exploit_50":"菜鸟探险家",
   "att2.advancement.progress.description.exploit_50":"获得50个探索点",
 
@@ -5382,6 +5439,66 @@
 
   "att2.advancement.progress.title.waypoint_100":"你是魔术师吗？",
   "att2.advancement.progress.description.waypoint_100":"使用100次传送阵",
+
+  "钓鱼":"//",
+  "att2.advancement.progress.title.fishing":"钓鱼",
+  "att2.advancement.progress.description.fishing":"空军",
+  
+  "att2.advancement.progress.title.fishing_count_1":"涟漪初遇",
+  "att2.advancement.progress.description.fishing_count_1":"累计钓鱼1次",
+  "att2.advancement.progress.title.fishing_count_5":"静水微澜",
+  "att2.advancement.progress.description.fishing_count_5":"累计钓鱼5次",
+  "att2.advancement.progress.title.fishing_count_10":"钓影成诗",
+  "att2.advancement.progress.description.fishing_count_10":"累计钓鱼10次",
+  "att2.advancement.progress.title.fishing_count_25":"波光渔梦",
+  "att2.advancement.progress.description.fishing_count_25":"累计钓鱼25次",
+  "att2.advancement.progress.title.fishing_count_50":"竿舞星河",
+  "att2.advancement.progress.description.fishing_count_50":"累计钓鱼50次",
+  "att2.advancement.progress.title.fishing_count_100":"一钓千年",
+  "att2.advancement.progress.description.fishing_count_100":"累计钓鱼100次",
+  
+  "att2.advancement.progress.title.fishing_com_1":"初问“普通”窝点",
+  "att2.advancement.progress.description.fishing_com_1":"在“普通”窝点钓鱼1次",
+  "att2.advancement.progress.title.fishing_com_10":"常驻“普通”窝点",
+  "att2.advancement.progress.description.fishing_com_10":"在“普通”窝点钓鱼10次",
+  
+  "att2.advancement.progress.title.fishing_unc_1":"初问“常见”窝点",
+  "att2.advancement.progress.description.fishing_unc_1":"在“常见”窝点钓鱼1次",
+  "att2.advancement.progress.title.fishing_unc_10":"常驻“常见”窝点",
+  "att2.advancement.progress.description.fishing_unc_10":"在“常见”窝点钓鱼10次",
+  
+  "att2.advancement.progress.title.fishing_rar_1":"初问“稀有”窝点",
+  "att2.advancement.progress.description.fishing_rar_1":"在“稀有”窝点钓鱼1次",
+  "att2.advancement.progress.title.fishing_rar_10":"常驻“稀有”窝点",
+  "att2.advancement.progress.description.fishing_rar_10":"在“稀有”窝点钓鱼10次",
+  
+  "att2.advancement.progress.title.fishing_epi_1":"初问“史诗”窝点",
+  "att2.advancement.progress.description.fishing_epi_1":"在“史诗”窝点钓鱼1次",
+  "att2.advancement.progress.title.fishing_epi_10":"常驻“史诗”窝点",
+  "att2.advancement.progress.description.fishing_epi_10":"在“史诗”窝点钓鱼10次",
+  
+  "att2.advancement.progress.title.fishing_leg_1":"初问“传说”窝点",
+  "att2.advancement.progress.description.fishing_leg_1":"在“传说”窝点钓鱼1次",
+  "att2.advancement.progress.title.fishing_leg_10":"常驻“传说”窝点",
+  "att2.advancement.progress.description.fishing_leg_10":"在“传说”窝点钓鱼10次",
+  
+  "att2.advancement.progress.title.fishing_ult_1":"初问“终极”窝点",
+  "att2.advancement.progress.description.fishing_ult_1":"在“终极”窝点钓鱼1次",
+  "att2.advancement.progress.title.fishing_ult_10":"常驻“终极”窝点",
+  "att2.advancement.progress.description.fishing_ult_10":"在“终极”窝点钓鱼10次",
+  
+  "att2.advancement.progress.title.fishing_discover_1":"初探钓点",
+  "att2.advancement.progress.description.fishing_discover_1":"发现1个钓鱼点位并进行一次垂钓",
+  "att2.advancement.progress.title.fishing_discover_5":"小试江湖",
+  "att2.advancement.progress.description.fishing_discover_5":"发现5个钓鱼点位并进行一次垂钓",
+  "att2.advancement.progress.title.fishing_discover_10":"十方烟波",
+  "att2.advancement.progress.description.fishing_discover_10":"发现10个钓鱼点位并进行一次垂钓",
+  "att2.advancement.progress.title.fishing_discover_25":"钓途印记",
+  "att2.advancement.progress.description.fishing_discover_25":"发现25个钓鱼点位并进行一次垂钓",
+  "att2.advancement.progress.title.fishing_discover_50":"半生钓途",
+  "att2.advancement.progress.description.fishing_discover_50":"发现50个钓鱼点位并进行一次垂钓",
+  "att2.advancement.progress.title.fishing_discover_100":"百水归心",
+  "att2.advancement.progress.description.fishing_discover_100":"发现100个钓鱼点位并进行一次垂钓",
 
   "支线":"quest",
 
@@ -5920,49 +6037,49 @@
   "att2.advancement.story.description.mainquest_28":"穿越时空",
 
   "att2.advancement.story.title.mainquest_29":"这可不是什么甜蜜的回忆...",
+  "att2.advancement.story.description.mainquest_29":"穿越时空",
+
+  "att2.advancement.story.title.mainquest_30":"飞起来!",
   "att2.advancement.story.description.mainquest_30":"穿越时空",
 
-  "att2.advancement.story.title.mainquest_31":"飞起来！",
+  "att2.advancement.story.title.mainquest_31":"贪婪的国王",
   "att2.advancement.story.description.mainquest_31":"穿越时空",
 
-  "att2.advancement.story.title.mainquest_32":"贪婪的国王",
+  "att2.advancement.story.title.mainquest_32":"自由的飞翔!",
   "att2.advancement.story.description.mainquest_32":"穿越时空",
 
-  "att2.advancement.story.title.mainquest_33":"自由的飞翔！",
+  "att2.advancement.story.title.mainquest_33":"芝麻开门!",
   "att2.advancement.story.description.mainquest_33":"穿越时空",
 
-  "att2.advancement.story.title.mainquest_34":"自由的飞翔！",
+  "att2.advancement.story.title.mainquest_34":"老友相助",
   "att2.advancement.story.description.mainquest_34":"穿越时空",
 
-  "att2.advancement.story.title.mainquest_35":"芝麻开门！",
+  "att2.advancement.story.title.mainquest_35":"第三颗时间宝石",
   "att2.advancement.story.description.mainquest_35":"穿越时空",
 
-  "att2.advancement.story.title.mainquest_36":"老友相助",
+  "att2.advancement.story.title.mainquest_36":"一位乐于助人的朋友",
   "att2.advancement.story.description.mainquest_36":"穿越时空",
 
-  "att2.advancement.story.title.mainquest_37":"第三颗时间宝石",
+  "att2.advancement.story.title.mainquest_37":"你不能独自前往宇宙",
   "att2.advancement.story.description.mainquest_37":"穿越时空",
 
-  "att2.advancement.story.title.mainquest_38":"一位乐于助人的朋友",
+  "att2.advancement.story.title.mainquest_38":"昔日重现",
   "att2.advancement.story.description.mainquest_38":"穿越时空",
 
-  "att2.advancement.story.title.mainquest_39":"你不能独自前往宇宙",
+  "att2.advancement.story.title.mainquest_39":"直面恐惧",
   "att2.advancement.story.description.mainquest_39":"穿越时空",
 
-  "att2.advancement.story.title.mainquest_40":"昔日重现",
+  "att2.advancement.story.title.mainquest_40":"这儿不只有你一个人...",
   "att2.advancement.story.description.mainquest_40":"穿越时空",
 
-  "att2.advancement.story.title.mainquest_41":"直面恐惧",
+  "att2.advancement.story.title.mainquest_41":"残缺的生命体",
   "att2.advancement.story.description.mainquest_41":"穿越时空",
 
-  "att2.advancement.story.title.mainquest_42":"这儿不只有你一个人...",
+  "att2.advancement.story.title.mainquest_42":"报复时刻",
   "att2.advancement.story.description.mainquest_42":"穿越时空",
 
-  "att2.advancement.story.title.mainquest_43":"残缺的生命体",
-  "att2.advancement.story.description.mainquest_43":"穿越时空",
-
-  "att2.advancement.story.title.mainquest_44":"报复时刻",
-  "att2.advancement.story.description.mainquest_44":"旅途的终点",
+  "att2.advancement.story.title.mainquest_43":"时代的终结",
+  "att2.advancement.story.description.mainquest_43":"终点",
 
   "att2.advancement.story.title.nodeath_nightmare":"你是永生者吗",
   "att2.advancement.story.description.nodeath_nightmare":"在梦魇难度下一命通关主线",
@@ -6445,8 +6562,12 @@
   "att2.advancement.treasure.title.wooden_axe_165": "血腥黄昏",
   "att2.advancement.treasure.description.wooden_axe_165": "血浓于水！",
 
-  "att2.advancement.treasure.title.wooden_pickaxe_164": "无情之人",
-  "att2.advancement.treasure.description.wooden_pickaxe_164": "折磨他人变成了一种爱好",
+  "att2.advancement.treasure.title.amethyst": "解酒醒神，明心见性！",
+  "att2.advancement.treasure.description.amethyst": "紫水晶无意争辉，只为指引迷津",
+  
+  "att2.advancement.treasure.title.ruby": "生命最真实的写照！",
+  "att2.advancement.treasure.description.ruby": "红宝石闪耀的不是光芒，而是生命的光芒",
+
 
   "武器大师":"weapons",
 
@@ -6799,5 +6920,169 @@
   "att2.advancement.weapons.description.wooden_sword_250": "用木剑攻击250次",
 
   "att2.advancement.weapons.title.wooden_sword_50": "初学木剑",
-  "att2.advancement.weapons.description.wooden_sword_50": "用木剑攻击50次"
+  "att2.advancement.weapons.description.wooden_sword_50": "用木剑攻击50次",
+
+  
+  "装备附魔": "///",
+
+  "att2.advancement.enchantments.root": "附魔",
+  "att2.advancement.enchantments.description.root": "附魔师",
+
+
+  "att2.advancement.enchantments.title.1000slay":"千人斩",
+  "att2.advancement.enchantments.description.1000slay":"为战斧附上“千人斩”",
+  "att2.advancement.enchantments.title.1000slay_max":"斩千人",
+  "att2.advancement.enchantments.description.1000slay_max":"使用附有“千人斩”的战斧击杀1000名敌人",
+
+  "att2.advancement.enchantments.title.abyssdiver":"深海探索者",
+  "att2.advancement.enchantments.description.abyssdiver":"为战靴附上“深海探索者”",
+  "att2.advancement.enchantments.title.abyssdiver_max":"精通“深海探索者”",
+  "att2.advancement.enchantments.description.abyssdiver_max":"为战靴附上满级的“深海探索者”",
+
+  "att2.advancement.enchantments.title.anchorshot":"锚定射击",
+  "att2.advancement.enchantments.description.anchorshot":"为弓附上“锚定射击”",
+  "att2.advancement.enchantments.title.anchorshot_max":"精通“锚定射击”",
+  "att2.advancement.enchantments.description.anchorshot_max":"为弓附上满级的“锚定射击”",
+
+  "att2.advancement.enchantments.title.arcanedrive":"法术过载",
+  "att2.advancement.enchantments.description.arcanedrive":"为护腿附上“法术过载”",
+  "att2.advancement.enchantments.title.arcanedrive_max":"精通“法术过载”",
+  "att2.advancement.enchantments.description.arcanedrive_max":"为护腿附上满级的“法术过载”",
+
+  "att2.advancement.enchantments.title.armorbreak":"破甲",
+  "att2.advancement.enchantments.description.armorbreak":"为战斧附上“破甲”",
+  "att2.advancement.enchantments.title.armorbreak_max":"精通“破甲”",
+  "att2.advancement.enchantments.description.armorbreak_max":"为战斧附上满级“破甲”",
+
+  "att2.advancement.enchantments.title.auto_mending":"自动修复",
+  "att2.advancement.enchantments.description.auto_mending":"为装备附上“自动修复”",
+  "att2.advancement.enchantments.title.auto_mending_max":"精通“自动修复”",
+  "att2.advancement.enchantments.description.auto_mending_max":"为装备附上满级的“自动修复”",
+
+  "att2.advancement.enchantments.title.backstab":"背刺",
+  "att2.advancement.enchantments.description.backstab":"为匕首附上“背刺”",
+  "att2.advancement.enchantments.title.backstab_max":"精通“背刺”",
+  "att2.advancement.enchantments.description.backstab_max":"为匕首附上满级的“背刺”",
+
+  "att2.advancement.enchantments.title.combohit":"终结技",
+  "att2.advancement.enchantments.description.combohit":"为匕首附上“终结技”",
+  "att2.advancement.enchantments.title.combohit_max":"精通“终结技”",
+  "att2.advancement.enchantments.description.combohit_max":"为匕首附上满级的“终结技”",
+
+  "att2.advancement.enchantments.title.cooldownrush":"急速冷却",
+  "att2.advancement.enchantments.description.cooldownrush":"为战靴附上“急速冷却”",
+  "att2.advancement.enchantments.title.cooldownrush_max":"精通“急速冷却”",
+  "att2.advancement.enchantments.description.cooldownrush_max":"为战靴附上满级的“急速冷却”",
+
+  "att2.advancement.enchantments.title.dahalsburst":"魔力爆发",
+  "att2.advancement.enchantments.description.dahalsburst":"为胸甲附上“魔力爆发”",
+  "att2.advancement.enchantments.title.dahalsburstt_max":"精通“魔力爆发”",
+  "att2.advancement.enchantments.description.dahalsburst_max":"为胸甲附上满级的“魔力爆发”",
+
+  "att2.advancement.enchantments.title.defensematrix":"防御力场",
+  "att2.advancement.enchantments.description.defensematrix":"为盾牌附上“防御力场”",
+
+  "att2.advancement.enchantments.title.easywalk":"行云流水",
+  "att2.advancement.enchantments.description.easywalk":"为战靴附上“行云流水”",
+
+  "att2.advancement.enchantments.title.empathy":"换位思考",
+  "att2.advancement.enchantments.description.empathy":"为头盔附上“换位思考”",
+  "att2.advancement.enchantments.title.empathy_max":"精通“换位思考”",
+  "att2.advancement.enchantments.description.empathy_max":"为头盔附上满级的“换位思考”",
+
+  "att2.advancement.enchantments.title.forcepush":"势如破竹",
+  "att2.advancement.enchantments.description.forcepush":"为战矛附上“势如破竹”",
+  "att2.advancement.enchantments.title.forcepush_max":"精通“势如破竹”",
+  "att2.advancement.enchantments.description.forcepush_max":"为战矛附上满级的“势如破竹”",
+
+  "att2.advancement.enchantments.title.gourmetmaster":"美食专家",
+  "att2.advancement.enchantments.description.gourmetmaster":"为头盔附上“美食专家”",
+  "att2.advancement.enchantments.title.gourmetmaster_max":"精通“美食专家”",
+  "att2.advancement.enchantments.description.gourmetmaster_max":"为头盔附上满级的“美食专家”",
+
+  "att2.advancement.enchantments.title.greatsword":"单手剑",
+  "att2.advancement.enchantments.description.greatsword":"为长剑附上“单手剑”",
+  "att2.advancement.enchantments.title.greatsword_max":"精通“单手剑”",
+  "att2.advancement.enchantments.description.greatsword_max":"为长剑附上满级的“单手剑”",
+
+  "att2.advancement.enchantments.title.groundslam":"撼地",
+  "att2.advancement.enchantments.description.groundslam":"为战锤附上“撼地”",
+  "att2.advancement.enchantments.title.groundslam_max":"精通“撼地”",
+  "att2.advancement.enchantments.description.groundslam_max":"为战锤附上满级的“撼地”",
+
+  "att2.advancement.enchantments.title.headhunter":"猎头",
+  "att2.advancement.enchantments.description.headhunter":"为弓附上“猎头”",
+  "att2.advancement.enchantments.title.headhunter_max":"精通“猎头”",
+  "att2.advancement.enchantments.description.headhunter_max":"为弓附上满级的“猎头”",
+
+  "att2.advancement.enchantments.title.heart_protection":"心脏保护",
+  "att2.advancement.enchantments.description.heart_protection":"为胸甲附上“心脏保护”",
+  "att2.advancement.enchantments.title.heart_protection_max":"精通“心脏保护”",
+  "att2.advancement.enchantments.description.heart_protection_max":"为胸甲附上满级的“心脏保护”",
+
+  "att2.advancement.enchantments.title.hpmax_ex_dahalmax":"魔力汲取",
+  "att2.advancement.enchantments.description.hpmax_ex_dahalmax":"为头盔附上“魔力汲取”",
+  "att2.advancement.enchantments.title.hpmax_ex_dahalmax_max":"精通“魔力汲取”",
+  "att2.advancement.enchantments.description.hpmax_ex_dahalmax_max":"为头盔附上满级的“魔力汲取”",
+
+  "att2.advancement.enchantments.title.longreach":"寒芒",
+  "att2.advancement.enchantments.description.longreach":"为战矛附上“寒芒”",
+  "att2.advancement.enchantments.title.longreach_max":"精通“寒芒”",
+  "att2.advancement.enchantments.description.longreach_max":"为战矛附上满级的“寒芒”",
+
+  "att2.advancement.enchantments.title.potionmaster":"炼金专家",
+  "att2.advancement.enchantments.description.potionmaster":"为头盔附上“炼金专家”",
+  "att2.advancement.enchantments.title.potionmaster_max":"精通“炼金专家”",
+  "att2.advancement.enchantments.description.potionmaster_max":"为头盔附上满级的“炼金专家”",
+
+  "att2.advancement.enchantments.title.precisionblock":"精准格挡",
+  "att2.advancement.enchantments.description.precisionblock":"为盾牌附上“精准格挡”",
+  "att2.advancement.enchantments.title.precisionblock_max":"精通“精准格挡”",
+  "att2.advancement.enchantments.description.precisionblock_max":"为盾牌附上满级的“精准格挡”",
+
+  "att2.advancement.enchantments.title.precisionshot":"精准射击",
+  "att2.advancement.enchantments.description.precisionshot":"为弩附上“精准射击”",
+
+  "att2.advancement.enchantments.title.reinforce":"加固",
+  "att2.advancement.enchantments.description.reinforce":"为装备附上“加固”",
+  "att2.advancement.enchantments.title.reinforce_max":"精通“加固”",
+  "att2.advancement.enchantments.description.reinforce_max":"为装备附上满级的“加固”",
+
+  "att2.advancement.enchantments.title.speedsave":"日行千里",
+  "att2.advancement.enchantments.description.speedsave":"为战靴附上“日行千里”",
+  "att2.advancement.enchantments.title.speedsave_max":"精通“日行千里”",
+  "att2.advancement.enchantments.description.speedsave_max":"为战靴附上满级的“日行千里”",
+
+  "att2.advancement.enchantments.title.runeharden":"符文加固",
+  "att2.advancement.enchantments.description.runeharden":"为装备附上“符文加固”",
+  "att2.advancement.enchantments.title.runeharden_max":"精通“符文加固”",
+  "att2.advancement.enchantments.description.runeharden_max":"为装备附上满级的“符文加固”",
+
+  "att2.advancement.enchantments.title.selflessaid":"舍己为人",
+  "att2.advancement.enchantments.description.selflessaid":"为胸甲附上“舍己为人”",
+  "att2.advancement.enchantments.title.selflessaid_max":"精通“舍己为人”",
+  "att2.advancement.enchantments.description.selflessaid_max":"为胸甲附上满级的“舍己为人”",
+
+  "att2.advancement.enchantments.title.speedburn":"瞬影焚身",
+  "att2.advancement.enchantments.description.speedburn":"为战靴附上“瞬影焚身”",
+  "att2.advancement.enchantments.title.speedburn_max":"精通“瞬影焚身”",
+  "att2.advancement.enchantments.description.speedburn_max":"为战靴附上满级的“瞬影焚身”",
+
+  "att2.advancement.enchantments.title.sscombo":"剑盾连携",
+  "att2.advancement.enchantments.description.sscombo":"为长剑附上“剑盾连携”",
+  "att2.advancement.enchantments.title.sscombo_max":"精通“剑盾连携”",
+  "att2.advancement.enchantments.description.sscombo_max":"为长剑附上满级的“剑盾连携”",
+
+  "att2.advancement.enchantments.title.swiftsneak":"迅捷潜行",
+  "att2.advancement.enchantments.description.swiftsneak":"为护腿附上“迅捷潜行”",
+  "att2.advancement.enchantments.title.swiftsneak_max":"精通“迅捷潜行”",
+  "att2.advancement.enchantments.description.swiftsneak_max":"为护腿附上满级的“迅捷潜行”",
+
+  "att2.advancement.enchantments.title.treasurehunter":"宝藏猎人",
+  "att2.advancement.enchantments.description.treasurehunter":"为护腿附上“宝藏猎人”",
+  "att2.advancement.enchantments.title.treasurehunter_max":"精通“宝藏猎人”",
+  "att2.advancement.enchantments.description.treasurehunter_max":"为护腿附上满级的“宝藏猎人”",
+
+  "att2.advancement.enchantments.title.all_enchantments":"传奇附魔师",
+  "att2.advancement.enchantments.description.all_enchantments":"为装备附上所有满级附魔"
 }

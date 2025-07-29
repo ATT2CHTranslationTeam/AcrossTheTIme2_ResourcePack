@@ -8,7 +8,8 @@
         },
         "entries": [
             {"threshold":1000000,"model":{"type":"model","model":"item/custom/spectral_axe"}},
-            {"threshold":10000001,"model":{"type":"model","model":"item/custom/fire_soul"}}
+            {"threshold":10000001,"model":{"type":"model","model":"item/custom/fire_soul"}},
+            {"threshold":10000002,"model":{"type":"model","model":"item/custom/fire_soul_head"}}
         ]
     }
 }

@@ -1,4 +1,5 @@
 {
+  "parent": "block/custom/futuristic_slab",
   "model": {
     "type": "minecraft:model",
     "model": "minecraft:block/acacia_slab"
