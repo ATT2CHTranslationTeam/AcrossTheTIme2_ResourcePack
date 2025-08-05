@@ -10,7 +10,8 @@
       "type": "minecraft:range_dispatch",
       "property": "minecraft:custom_model_data",
       "entries": [
-        {"threshold": 1000001,"model": {"type": "model","model": "item/custom/magic_sphere_cast"}}
+        {"threshold": 1000001,"model": {"type": "model","model": "item/custom/magic_sphere_cast"}},
+        {"threshold": 1,"model": {"type": "model","model": "item/carrot"}}
       ],
       "fallback": {
         "type": "minecraft:model",
