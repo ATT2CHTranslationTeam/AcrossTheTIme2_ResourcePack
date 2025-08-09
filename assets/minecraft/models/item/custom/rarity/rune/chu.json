@@ -1,0 +1,6 @@
+{
+    "parent": "item/custom/runes/chu",
+    "textures": {
+        "layer1": "item/custom/rarity/rune_medium"
+    }
+}

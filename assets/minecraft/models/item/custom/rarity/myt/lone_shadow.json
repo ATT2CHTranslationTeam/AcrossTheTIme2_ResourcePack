@@ -1,0 +1,6 @@
+{
+    "parent": "item/custom/lone_shadow",
+    "textures": {
+        "layer1": "item/custom/rarity/myt"
+    }
+}

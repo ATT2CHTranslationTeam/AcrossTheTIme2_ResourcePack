@@ -1,0 +1,6 @@
+{
+    "parent": "item/custom/weaponsking",
+    "textures": {
+        "layer1": "item/custom/rarity/myt"
+    }
+}

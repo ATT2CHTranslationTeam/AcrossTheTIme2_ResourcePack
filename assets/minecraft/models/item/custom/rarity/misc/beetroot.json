@@ -1,0 +1,6 @@
+{
+    "parent": "item/beetroot",
+    "textures": {
+        "layer1": "item/custom/rarity/misc"
+    }
+}

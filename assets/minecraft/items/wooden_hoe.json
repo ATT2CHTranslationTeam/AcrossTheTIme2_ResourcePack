@@ -1,6 +1,75 @@
 {
   "model": {
-    "type": "minecraft:model",
-    "model": "minecraft:item/wooden_hoe"
+    "type": "select",
+    "property": "display_context",
+    "cases": [
+      {
+        "when": "gui",
+        "model": {
+          "type": "select",
+          "property": "component",
+          "component": "tooltip_style",
+          "cases": [
+            {
+              "when": "minecraft:rarity/com/com",
+              "model": {
+                "type": "model",
+                "model": "minecraft:item/custom/rarity/com/wooden_hoe"
+              }
+            },
+            {
+              "when": "minecraft:rarity/unc/unc",
+              "model": {
+                "type": "model",
+                "model": "minecraft:item/custom/rarity/unc/wooden_hoe"
+              }
+            },
+            {
+              "when": "minecraft:rarity/rar/rar",
+              "model": {
+                "type": "model",
+                "model": "minecraft:item/custom/rarity/rar/wooden_hoe"
+              }
+            },
+            {
+              "when": "minecraft:rarity/epi/epi",
+              "model": {
+                "type": "model",
+                "model": "minecraft:item/custom/rarity/epi/wooden_hoe"
+              }
+            },
+            {
+              "when": "minecraft:rarity/epi_esc/epi_esc",
+              "model": {
+                "type": "model",
+                "model": "minecraft:item/custom/rarity/epi_esc/wooden_hoe"
+              }
+            },
+            {
+              "when": "minecraft:rarity/leg/leg",
+              "model": {
+                "type": "model",
+                "model": "minecraft:item/custom/rarity/leg/wooden_hoe"
+              }
+            },
+            {
+              "when": "minecraft:rarity/ult/ult",
+              "model": {
+                "type": "model",
+                "model": "minecraft:item/custom/rarity/ult/wooden_hoe"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "model",
+            "model": "minecraft:item/wooden_hoe"
+          }
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "minecraft:item/wooden_hoe"
+    }
   }
 }

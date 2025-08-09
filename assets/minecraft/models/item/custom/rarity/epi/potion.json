@@ -1,0 +1,6 @@
+{
+    "parent": "item/potion",
+    "textures": {
+        "layer2": "item/custom/rarity/epi"
+    }
+}

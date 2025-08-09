@@ -1,6 +1,19 @@
 {
   "model": {
-    "type": "minecraft:model",
-    "model": "minecraft:item/yellow_dye"
+    "type": "select",
+    "property": "display_context",
+    "cases": [
+      {
+        "when": "gui",
+        "model": {
+          "type": "model",
+          "model": "minecraft:item/custom/rarity/quest/yellow_dye"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "minecraft:item/yellow_dye"
+    }
   }
 }

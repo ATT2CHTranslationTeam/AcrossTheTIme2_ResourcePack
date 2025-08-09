@@ -1,0 +1,6 @@
+{
+    "parent": "item/lingering_potion",
+    "textures": {
+        "layer2": "item/custom/rarity/unc"
+    }
+}

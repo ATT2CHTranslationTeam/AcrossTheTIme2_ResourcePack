@@ -1,0 +1,6 @@
+{
+    "parent": "item/melon_slice",
+    "textures": {
+        "layer1": "item/custom/rarity/misc"
+    }
+}

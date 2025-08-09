@@ -1,0 +1,6 @@
+{
+    "parent": "item/custom/immortalbow_standby",
+    "textures": {
+        "layer1": "item/custom/rarity/myt"
+    }
+}

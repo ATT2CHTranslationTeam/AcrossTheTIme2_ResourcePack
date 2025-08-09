@@ -1,0 +1,6 @@
+{
+    "parent": "item/nether_star",
+    "textures": {
+        "layer1": "item/custom/rarity/quest"
+    }
+}

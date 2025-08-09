@@ -1,6 +1,75 @@
 {
   "model": {
-    "type": "minecraft:model",
-    "model": "minecraft:item/wooden_axe"
+    "type": "select",
+    "property": "display_context",
+    "cases": [
+      {
+        "when": "gui",
+        "model": {
+          "type": "select",
+          "property": "component",
+          "component": "tooltip_style",
+          "cases": [
+            {
+              "when": "minecraft:rarity/com/com",
+              "model": {
+                "type": "model",
+                "model": "minecraft:item/custom/rarity/com/wooden_axe"
+              }
+            },
+            {
+              "when": "minecraft:rarity/unc/unc",
+              "model": {
+                "type": "model",
+                "model": "minecraft:item/custom/rarity/unc/wooden_axe"
+              }
+            },
+            {
+              "when": "minecraft:rarity/rar/rar",
+              "model": {
+                "type": "model",
+                "model": "minecraft:item/custom/rarity/rar/wooden_axe"
+              }
+            },
+            {
+              "when": "minecraft:rarity/epi/epi",
+              "model": {
+                "type": "model",
+                "model": "minecraft:item/custom/rarity/epi/wooden_axe"
+              }
+            },
+            {
+              "when": "minecraft:rarity/epi_esc/epi_esc",
+              "model": {
+                "type": "model",
+                "model": "minecraft:item/custom/rarity/epi_esc/wooden_axe"
+              }
+            },
+            {
+              "when": "minecraft:rarity/leg/leg",
+              "model": {
+                "type": "model",
+                "model": "minecraft:item/custom/rarity/leg/wooden_axe"
+              }
+            },
+            {
+              "when": "minecraft:rarity/ult/ult",
+              "model": {
+                "type": "model",
+                "model": "minecraft:item/custom/rarity/ult/wooden_axe"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "model",
+            "model": "minecraft:item/wooden_axe"
+          }
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "minecraft:item/wooden_axe"
+    }
   }
 }

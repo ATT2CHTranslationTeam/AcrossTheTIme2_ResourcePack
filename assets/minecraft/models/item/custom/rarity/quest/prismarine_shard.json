@@ -1,0 +1,6 @@
+{
+    "parent": "item/prismarine_shard",
+    "textures": {
+        "layer1": "item/custom/rarity/quest"
+    }
+}

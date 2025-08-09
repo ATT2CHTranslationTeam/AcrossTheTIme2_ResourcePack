@@ -1,16 +1,39 @@
 {
   "model": {
-    "type": "minecraft:model",
-    "model": "minecraft:item/firework_star",
-    "tints": [
+    "type": "select",
+    "property": "display_context",
+    "cases": [
       {
-        "type": "minecraft:constant",
-        "value": -1
-      },
-      {
-        "type": "minecraft:firework",
-        "default": -7697782
+        "when": "gui",
+        "model": {
+          "type": "model",
+          "model": "minecraft:item/custom/rarity/quest/firework_star",
+          "tints": [
+            {
+              "type": "minecraft:constant",
+              "value": -1
+            },
+            {
+              "type": "minecraft:firework",
+              "default": -7697782
+            }
+          ]
+        }
       }
-    ]
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "minecraft:item/firework_star",
+      "tints": [
+        {
+          "type": "minecraft:constant",
+          "value": -1
+        },
+        {
+          "type": "minecraft:firework",
+          "default": -7697782
+        }
+      ]
+    }
   }
 }

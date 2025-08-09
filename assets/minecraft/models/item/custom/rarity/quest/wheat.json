@@ -1,0 +1,6 @@
+{
+    "parent": "item/wheat",
+    "textures": {
+        "layer1": "item/custom/rarity/quest"
+    }
+}

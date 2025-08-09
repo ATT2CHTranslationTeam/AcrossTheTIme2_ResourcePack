@@ -1,0 +1,6 @@
+{
+    "parent": "item/custom/immortalbow_pulling_1",
+    "textures": {
+        "layer1": "item/custom/rarity/myt"
+    }
+}

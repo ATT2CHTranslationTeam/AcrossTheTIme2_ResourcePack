@@ -1,0 +1,6 @@
+{
+    "parent": "item/diamond_helmet",
+    "textures": {
+        "layer1": "item/custom/rarity/com"
+    }
+}

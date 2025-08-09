@@ -1,0 +1,6 @@
+{
+    "parent": "item/iron_nugget",
+    "textures": {
+        "layer1": "item/custom/rarity/xxx/"
+    }
+}

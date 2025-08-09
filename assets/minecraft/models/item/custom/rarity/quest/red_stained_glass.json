@@ -1,0 +1,6 @@
+{
+    "parent": "item/red_stained_glass",
+    "textures": {
+        "layer1": "item/custom/rarity/quest"
+    }
+}

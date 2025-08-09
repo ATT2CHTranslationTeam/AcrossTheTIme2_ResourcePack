@@ -81,8 +81,91 @@
       }
     ],
     "fallback": {
-      "type": "minecraft:model",
-      "model": "minecraft:item/diamond_boots"
+      "type": "select",
+      "property": "display_context",
+      "cases": [
+        {
+          "when": "gui",
+          "model": {
+            "type": "select",
+            "property": "component",
+            "component": "tooltip_style",
+            "cases": [
+              {
+                "when": "minecraft:rarity/com/com",
+                "model": {
+                  "type": "model",
+                  "model": "minecraft:item/custom/rarity/com/diamond_boots"
+                }
+              },
+              {
+                "when": "minecraft:rarity/unc/unc",
+                "model": {
+                  "type": "model",
+                  "model": "minecraft:item/custom/rarity/unc/diamond_boots"
+                }
+              },
+              {
+                "when": "minecraft:rarity/rar/rar",
+                "model": {
+                  "type": "model",
+                  "model": "minecraft:item/custom/rarity/rar/diamond_boots"
+                }
+              },
+              {
+                "when": "minecraft:rarity/epi/epi",
+                "model": {
+                  "type": "model",
+                  "model": "minecraft:item/custom/rarity/epi/diamond_boots"
+                }
+              },
+              {
+                "when": "minecraft:rarity/epi_esc/epi_esc",
+                "model": {
+                  "type": "model",
+                  "model": "minecraft:item/custom/rarity/epi_esc/diamond_boots"
+                }
+              },
+              {
+                "when": "minecraft:rarity/epi_set/epi_set",
+                "model": {
+                  "type": "model",
+                  "model": "minecraft:item/custom/rarity/epi_set/diamond_boots"
+                }
+              },
+              {
+                "when": "minecraft:rarity/leg/leg",
+                "model": {
+                  "type": "model",
+                  "model": "minecraft:item/custom/rarity/leg/diamond_boots"
+                }
+              },
+              {
+                "when": "minecraft:rarity/leg_armset/leg_armset",
+                "model": {
+                  "type": "model",
+                  "model": "minecraft:item/custom/rarity/leg_armset/diamond_boots"
+                }
+              },
+              {
+                "when": "minecraft:rarity/ult/ult",
+                "model": {
+                  "type": "model",
+                  "model": "minecraft:item/custom/rarity/ult/diamond_boots"
+                }
+              }
+            ],
+            "fallback": {
+              "type": "model",
+              "model": "minecraft:item/diamond_boots"
+            }
+          }
+        }
+      ],
+      "fallback": {
+        "type": "model",
+        "model": "minecraft:item/diamond_boots"
+      }
     },
     "property": "minecraft:trim_material"
   }

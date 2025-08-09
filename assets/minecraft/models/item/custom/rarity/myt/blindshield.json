@@ -1,0 +1,6 @@
+{
+    "parent": "item/custom/blindshield",
+    "textures": {
+        "layer1": "item/custom/rarity/myt"
+    }
+}

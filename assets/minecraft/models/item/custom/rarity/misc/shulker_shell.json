@@ -1,0 +1,6 @@
+{
+    "parent": "item/custom/magasin",
+    "textures": {
+        "layer1": "item/custom/rarity/misc"
+    }
+}

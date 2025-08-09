@@ -1,0 +1,6 @@
+{
+    "parent": "item/rotten_flesh",
+    "textures": {
+        "layer1": "item/custom/rarity/misc"
+    }
+}

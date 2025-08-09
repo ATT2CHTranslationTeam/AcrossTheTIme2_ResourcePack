@@ -1,53 +1,560 @@
 {
   "model": {
     "type": "minecraft:condition",
+    "property": "minecraft:using_item",
     "on_false": {
       "type": "minecraft:range_dispatch",
       "property": "minecraft:custom_model_data",
       "entries": [
-        {"threshold": 1000000,"model": {"type": "model","model": "item/custom/spectral_bow_standby"}},
-        {"threshold": 10000100,"model": {"type": "model","model": "item/custom/immortalbow_standby"}},
-        {"threshold": 10000101,"model": {"type": "model","model": "item/custom/warbow_standby"}}
+        {
+          "threshold": 1000000,
+          "model": {
+            "type": "select",
+            "property": "display_context",
+            "cases": [
+              {
+                "when": "gui",
+                "model": {
+                  "type": "select",
+                  "property": "component",
+                  "component": "tooltip_style",
+                  "cases": [
+                    {
+                      "when": "minecraft:rarity/com/com",
+                      "model": {
+                        "type": "model",
+                        "model": "minecraft:item/custom/rarity/com/spectral_bow_standby"
+                      }
+                    },
+                    {
+                      "when": "minecraft:rarity/unc/unc",
+                      "model": {
+                        "type": "model",
+                        "model": "minecraft:item/custom/rarity/unc/spectral_bow_standby"
+                      }
+                    },
+                    {
+                      "when": "minecraft:rarity/rar/rar",
+                      "model": {
+                        "type": "model",
+                        "model": "minecraft:item/custom/rarity/rar/spectral_bow_standby"
+                      }
+                    },
+                    {
+                      "when": "minecraft:rarity/epi/epi",
+                      "model": {
+                        "type": "model",
+                        "model": "minecraft:item/custom/rarity/epi/spectral_bow_standby"
+                      }
+                    },
+                    {
+                      "when": "minecraft:rarity/leg/leg",
+                      "model": {
+                        "type": "model",
+                        "model": "minecraft:item/custom/rarity/leg/spectral_bow_standby"
+                      }
+                    }
+                  ],
+                  "fallback": {
+                    "type": "model",
+                    "model": "minecraft:item/custom/spectral_bow_standby"
+                  }
+                }
+              }
+            ],
+            "fallback": {
+              "type": "model",
+              "model": "minecraft:item/custom/spectral_bow_standby"
+            }
+          }
+        },
+        {
+          "threshold": 10000100,
+          "model": {
+            "type": "select",
+            "property": "display_context",
+            "cases": [
+              {
+                "when": "gui",
+                "model": {
+                  "type": "model",
+                  "model": "minecraft:item/custom/rarity/myt/immortalbow_standby"
+                }
+              }
+            ],
+            "fallback": {
+              "type": "model",
+              "model": "minecraft:item/custom/immortalbow_standby"
+            }
+          }
+        },
+        {
+          "threshold": 10000101,
+          "model": {
+            "type": "select",
+            "property": "display_context",
+            "cases": [
+              {
+                "when": "gui",
+                "model": {
+                  "type": "model",
+                  "model": "minecraft:item/custom/rarity/myt/warbow_standby"
+                }
+              }
+            ],
+            "fallback": {
+              "type": "model",
+              "model": "minecraft:item/custom/warbow_standby"
+            }
+          }
+        }
       ],
       "fallback": {
-        "type": "minecraft:model",
-        "model": "minecraft:item/bow"
+        "type": "select",
+        "property": "display_context",
+        "cases": [
+          {
+            "when": "gui",
+            "model": {
+              "type": "select",
+              "property": "component",
+              "component": "tooltip_style",
+              "cases": [
+                {
+                  "when": "minecraft:rarity/com/com",
+                  "model": {
+                    "type": "model",
+                    "model": "minecraft:item/custom/rarity/com/bow"
+                  }
+                },
+                {
+                  "when": "minecraft:rarity/unc/unc",
+                  "model": {
+                    "type": "model",
+                    "model": "minecraft:item/custom/rarity/unc/bow"
+                  }
+                },
+                {
+                  "when": "minecraft:rarity/rar/rar",
+                  "model": {
+                    "type": "model",
+                    "model": "minecraft:item/custom/rarity/rar/bow"
+                  }
+                },
+                {
+                  "when": "minecraft:rarity/epi/epi",
+                  "model": {
+                    "type": "model",
+                    "model": "minecraft:item/custom/rarity/epi/bow"
+                  }
+                },
+                {
+                  "when": "minecraft:rarity/epi_esc/epi_esc",
+                  "model": {
+                    "type": "model",
+                    "model": "minecraft:item/custom/rarity/epi_esc/bow"
+                  }
+                },
+                {
+                  "when": "minecraft:rarity/leg/leg",
+                  "model": {
+                    "type": "model",
+                    "model": "minecraft:item/custom/rarity/leg/bow"
+                  }
+                },
+                {
+                  "when": "minecraft:rarity/ult/ult",
+                  "model": {
+                    "type": "model",
+                    "model": "minecraft:item/custom/rarity/ult/bow"
+                  }
+                }
+              ],
+              "fallback": {
+                "type": "model",
+                "model": "minecraft:item/bow"
+              }
+            }
+          }
+        ],
+        "fallback": {
+          "type": "model",
+          "model": "minecraft:item/bow"
+        }
       }
     },
     "on_true": {
       "type": "minecraft:range_dispatch",
+      "property": "minecraft:use_duration",
+      "scale": 0.05,
       "entries": [
         {
+          "threshold": 0.65,
           "model": {
             "type": "minecraft:range_dispatch",
             "property": "minecraft:custom_model_data",
             "entries": [
-              {"threshold": 1000000,"model": {"type": "model","model": "item/custom/spectral_bow_pulling_1"}},
-              {"threshold": 10000100,"model": {"type": "model","model": "item/custom/immortalbow_pulling_1"}},
-              {"threshold": 10000101,"model": {"type": "model","model": "item/custom/warbow_pulling_1"}}
+              {
+                "threshold": 1000000,
+                "model": {
+                  "type": "select",
+                  "property": "display_context",
+                  "cases": [
+                    {
+                      "when": "gui",
+                      "model": {
+                        "type": "select",
+                        "property": "component",
+                        "component": "tooltip_style",
+                        "cases": [
+                          {
+                            "when": "minecraft:rarity/com/com",
+                            "model": {
+                              "type": "model",
+                              "model": "minecraft:item/custom/rarity/com/spectral_bow_pulling_1"
+                            }
+                          },
+                          {
+                            "when": "minecraft:rarity/unc/unc",
+                            "model": {
+                              "type": "model",
+                              "model": "minecraft:item/custom/rarity/unc/spectral_bow_pulling_1"
+                            }
+                          },
+                          {
+                            "when": "minecraft:rarity/rar/rar",
+                            "model": {
+                              "type": "model",
+                              "model": "minecraft:item/custom/rarity/rar/spectral_bow_pulling_1"
+                            }
+                          },
+                          {
+                            "when": "minecraft:rarity/epi/epi",
+                            "model": {
+                              "type": "model",
+                              "model": "minecraft:item/custom/rarity/epi/spectral_bow_pulling_1"
+                            }
+                          },
+                          {
+                            "when": "minecraft:rarity/leg/leg",
+                            "model": {
+                              "type": "model",
+                              "model": "minecraft:item/custom/rarity/leg/spectral_bow_pulling_1"
+                            }
+                          }
+                        ],
+                        "fallback": {
+                          "type": "model",
+                          "model": "minecraft:item/custom/spectral_bow_pulling_1"
+                        }
+                      }
+                    }
+                  ],
+                  "fallback": {
+                    "type": "model",
+                    "model": "minecraft:item/custom/spectral_bow_pulling_1"
+                  }
+                }
+              },
+              {
+                "threshold": 10000100,
+                "model": {
+                  "type": "select",
+                  "property": "display_context",
+                  "cases": [
+                    {
+                      "when": "gui",
+                      "model": {
+                        "type": "model",
+                        "model": "minecraft:item/custom/rarity/myt/immortalbow_pulling_1"
+                      }
+                    }
+                  ],
+                  "fallback": {
+                    "type": "model",
+                    "model": "minecraft:item/custom/immortalbow_pulling_1"
+                  }
+                }
+              },
+              {
+                "threshold": 10000101,
+                "model": {
+                  "type": "select",
+                  "property": "display_context",
+                  "cases": [
+                    {
+                      "when": "gui",
+                      "model": {
+                        "type": "model",
+                        "model": "minecraft:item/custom/rarity/myt/warbow_pulling_1"
+                      }
+                    }
+                  ],
+                  "fallback": {
+                    "type": "model",
+                    "model": "minecraft:item/custom/warbow_pulling_1"
+                  }
+                }
+              }
             ],
             "fallback": {
-              "type": "minecraft:model",
-              "model": "minecraft:item/bow_pulling_1"
+              "type": "select",
+              "property": "display_context",
+              "cases": [
+                {
+                  "when": "gui",
+                  "model": {
+                    "type": "select",
+                    "property": "component",
+                    "component": "tooltip_style",
+                    "cases": [
+                      {
+                        "when": "minecraft:rarity/com/com",
+                        "model": {
+                          "type": "model",
+                          "model": "minecraft:item/custom/rarity/com/bow_pulling_1"
+                        }
+                      },
+                      {
+                        "when": "minecraft:rarity/unc/unc",
+                        "model": {
+                          "type": "model",
+                          "model": "minecraft:item/custom/rarity/unc/bow_pulling_1"
+                        }
+                      },
+                      {
+                        "when": "minecraft:rarity/rar/rar",
+                        "model": {
+                          "type": "model",
+                          "model": "minecraft:item/custom/rarity/rar/bow_pulling_1"
+                        }
+                      },
+                      {
+                        "when": "minecraft:rarity/epi/epi",
+                        "model": {
+                          "type": "model",
+                          "model": "minecraft:item/custom/rarity/epi/bow_pulling_1"
+                        }
+                      },
+                      {
+                        "when": "minecraft:rarity/epi_esc/epi_esc",
+                        "model": {
+                          "type": "model",
+                          "model": "minecraft:item/custom/rarity/epi_esc/bow_pulling_1"
+                        }
+                      },
+                      {
+                        "when": "minecraft:rarity/leg/leg",
+                        "model": {
+                          "type": "model",
+                          "model": "minecraft:item/custom/rarity/leg/bow_pulling_1"
+                        }
+                      },
+                      {
+                        "when": "minecraft:rarity/ult/ult",
+                        "model": {
+                          "type": "model",
+                          "model": "minecraft:item/custom/rarity/ult/bow_pulling_1"
+                        }
+                      }
+                    ],
+                    "fallback": {
+                      "type": "model",
+                      "model": "minecraft:item/bow_pulling_1"
+                    }
+                  }
+                }
+              ],
+              "fallback": {
+                "type": "model",
+                "model": "minecraft:item/bow_pulling_1"
+              }
             }
-          },
-          "threshold": 0.65
+          }
         },
         {
+          "threshold": 0.9,
           "model": {
             "type": "minecraft:range_dispatch",
             "property": "minecraft:custom_model_data",
             "entries": [
-              {"threshold": 1000000,"model": {"type": "model","model": "item/custom/spectral_bow_pulling_2"}},
-              {"threshold": 10000100,"model": {"type": "model","model": "item/custom/immortalbow_pulling_2"}},
-              {"threshold": 10000101,"model": {"type": "model","model": "item/custom/warbow_pulling_2"}}
+              {
+                "threshold": 1000000,
+                "model": {
+                  "type": "select",
+                  "property": "display_context",
+                  "cases": [
+                    {
+                      "when": "gui",
+                      "model": {
+                        "type": "select",
+                        "property": "component",
+                        "component": "tooltip_style",
+                        "cases": [
+                          {
+                            "when": "minecraft:rarity/com/com",
+                            "model": {
+                              "type": "model",
+                              "model": "minecraft:item/custom/rarity/com/spectral_bow_pulling_2"
+                            }
+                          },
+                          {
+                            "when": "minecraft:rarity/unc/unc",
+                            "model": {
+                              "type": "model",
+                              "model": "minecraft:item/custom/rarity/unc/spectral_bow_pulling_2"
+                            }
+                          },
+                          {
+                            "when": "minecraft:rarity/rar/rar",
+                            "model": {
+                              "type": "model",
+                              "model": "minecraft:item/custom/rarity/rar/spectral_bow_pulling_2"
+                            }
+                          },
+                          {
+                            "when": "minecraft:rarity/epi/epi",
+                            "model": {
+                              "type": "model",
+                              "model": "minecraft:item/custom/rarity/epi/spectral_bow_pulling_2"
+                            }
+                          },
+                          {
+                            "when": "minecraft:rarity/leg/leg",
+                            "model": {
+                              "type": "model",
+                              "model": "minecraft:item/custom/rarity/leg/spectral_bow_pulling_2"
+                            }
+                          }
+                        ],
+                        "fallback": {
+                          "type": "model",
+                          "model": "minecraft:item/custom/spectral_bow_pulling_2"
+                        }
+                      }
+                    }
+                  ],
+                  "fallback": {
+                    "type": "model",
+                    "model": "minecraft:item/custom/spectral_bow_pulling_2"
+                  }
+                }
+              },
+              {
+                "threshold": 10000100,
+                "model": {
+                  "type": "select",
+                  "property": "display_context",
+                  "cases": [
+                    {
+                      "when": "gui",
+                      "model": {
+                        "type": "model",
+                        "model": "minecraft:item/custom/rarity/myt/immortalbow_pulling_2"
+                      }
+                    }
+                  ],
+                  "fallback": {
+                    "type": "model",
+                    "model": "minecraft:item/custom/immortalbow_pulling_2"
+                  }
+                }
+              },
+              {
+                "threshold": 10000101,
+                "model": {
+                  "type": "select",
+                  "property": "display_context",
+                  "cases": [
+                    {
+                      "when": "gui",
+                      "model": {
+                        "type": "model",
+                        "model": "minecraft:item/custom/rarity/myt/warbow_pulling_2"
+                      }
+                    }
+                  ],
+                  "fallback": {
+                    "type": "model",
+                    "model": "minecraft:item/custom/warbow_pulling_2"
+                  }
+                }
+              }
             ],
             "fallback": {
-              "type": "minecraft:model",
-              "model": "minecraft:item/bow_pulling_2"
+              "type": "select",
+              "property": "display_context",
+              "cases": [
+                {
+                  "when": "gui",
+                  "model": {
+                    "type": "select",
+                    "property": "component",
+                    "component": "tooltip_style",
+                    "cases": [
+                      {
+                        "when": "minecraft:rarity/com/com",
+                        "model": {
+                          "type": "model",
+                          "model": "minecraft:item/custom/rarity/com/bow_pulling_2"
+                        }
+                      },
+                      {
+                        "when": "minecraft:rarity/unc/unc",
+                        "model": {
+                          "type": "model",
+                          "model": "minecraft:item/custom/rarity/unc/bow_pulling_2"
+                        }
+                      },
+                      {
+                        "when": "minecraft:rarity/rar/rar",
+                        "model": {
+                          "type": "model",
+                          "model": "minecraft:item/custom/rarity/rar/bow_pulling_2"
+                        }
+                      },
+                      {
+                        "when": "minecraft:rarity/epi/epi",
+                        "model": {
+                          "type": "model",
+                          "model": "minecraft:item/custom/rarity/epi/bow_pulling_2"
+                        }
+                      },
+                      {
+                        "when": "minecraft:rarity/epi_esc/epi_esc",
+                        "model": {
+                          "type": "model",
+                          "model": "minecraft:item/custom/rarity/epi_esc/bow_pulling_2"
+                        }
+                      },
+                      {
+                        "when": "minecraft:rarity/leg/leg",
+                        "model": {
+                          "type": "model",
+                          "model": "minecraft:item/custom/rarity/leg/bow_pulling_2"
+                        }
+                      },
+                      {
+                        "when": "minecraft:rarity/ult/ult",
+                        "model": {
+                          "type": "model",
+                          "model": "minecraft:item/custom/rarity/ult/bow_pulling_2"
+                        }
+                      }
+                    ],
+                    "fallback": {
+                      "type": "model",
+                      "model": "minecraft:item/bow_pulling_2"
+                    }
+                  }
+                }
+              ],
+              "fallback": {
+                "type": "model",
+                "model": "minecraft:item/bow_pulling_2"
+              }
             }
-          },
-          "threshold": 0.9
+          }
         }
       ],
       "fallback": {
@@ -57,33 +564,180 @@
           {
             "threshold": 1000000,
             "model": {
-              "type": "model",
-              "model": "item/custom/spectral_bow_pulling_0"
+              "type": "select",
+              "property": "display_context",
+              "cases": [
+                {
+                  "when": "gui",
+                  "model": {
+                    "type": "select",
+                    "property": "component",
+                    "component": "tooltip_style",
+                    "cases": [
+                      {
+                        "when": "minecraft:rarity/com/com",
+                        "model": {
+                          "type": "model",
+                          "model": "minecraft:item/custom/rarity/com/spectral_bow_pulling_0"
+                        }
+                      },
+                      {
+                        "when": "minecraft:rarity/unc/unc",
+                        "model": {
+                          "type": "model",
+                          "model": "minecraft:item/custom/rarity/unc/spectral_bow_pulling_0"
+                        }
+                      },
+                      {
+                        "when": "minecraft:rarity/rar/rar",
+                        "model": {
+                          "type": "model",
+                          "model": "minecraft:item/custom/rarity/rar/spectral_bow_pulling_0"
+                        }
+                      },
+                      {
+                        "when": "minecraft:rarity/epi/epi",
+                        "model": {
+                          "type": "model",
+                          "model": "minecraft:item/custom/rarity/epi/spectral_bow_pulling_0"
+                        }
+                      },
+                      {
+                        "when": "minecraft:rarity/leg/leg",
+                        "model": {
+                          "type": "model",
+                          "model": "minecraft:item/custom/rarity/leg/spectral_bow_pulling_0"
+                        }
+                      }
+                    ],
+                    "fallback": {
+                      "type": "model",
+                      "model": "minecraft:item/custom/spectral_bow_pulling_0"
+                    }
+                  }
+                }
+              ],
+              "fallback": {
+                "type": "model",
+                "model": "minecraft:item/custom/spectral_bow_pulling_0"
+              }
             }
           },
           {
             "threshold": 10000100,
             "model": {
-              "type": "model",
-              "model": "item/custom/immortalbow_pulling_0"
+              "type": "select",
+              "property": "display_context",
+              "cases": [
+                {
+                  "when": "gui",
+                  "model": {
+                    "type": "model",
+                    "model": "minecraft:item/custom/rarity/myt/immortalbow_pulling_0"
+                  }
+                }
+              ],
+              "fallback": {
+                "type": "model",
+                "model": "minecraft:item/custom/immortalbow_pulling_0"
+              }
             }
           },
           {
             "threshold": 10000101,
             "model": {
-              "type": "model",
-              "model": "item/custom/warbow_pulling_0"
+              "type": "select",
+              "property": "display_context",
+              "cases": [
+                {
+                  "when": "gui",
+                  "model": {
+                    "type": "model",
+                    "model": "minecraft:item/custom/rarity/myt/warbow_pulling_0"
+                  }
+                }
+              ],
+              "fallback": {
+                "type": "model",
+                "model": "minecraft:item/custom/warbow_pulling_0"
+              }
             }
           }
         ],
         "fallback": {
-          "type": "minecraft:model",
-          "model": "minecraft:item/bow_pulling_0"
+          "type": "select",
+          "property": "display_context",
+          "cases": [
+            {
+              "when": "gui",
+              "model": {
+                "type": "select",
+                "property": "component",
+                "component": "tooltip_style",
+                "cases": [
+                  {
+                    "when": "minecraft:rarity/com/com",
+                    "model": {
+                      "type": "model",
+                      "model": "minecraft:item/custom/rarity/com/bow_pulling_0"
+                    }
+                  },
+                  {
+                    "when": "minecraft:rarity/unc/unc",
+                    "model": {
+                      "type": "model",
+                      "model": "minecraft:item/custom/rarity/unc/bow_pulling_0"
+                    }
+                  },
+                  {
+                    "when": "minecraft:rarity/rar/rar",
+                    "model": {
+                      "type": "model",
+                      "model": "minecraft:item/custom/rarity/rar/bow_pulling_0"
+                    }
+                  },
+                  {
+                    "when": "minecraft:rarity/epi/epi",
+                    "model": {
+                      "type": "model",
+                      "model": "minecraft:item/custom/rarity/epi/bow_pulling_0"
+                    }
+                  },
+                  {
+                    "when": "minecraft:rarity/epi_esc/epi_esc",
+                    "model": {
+                      "type": "model",
+                      "model": "minecraft:item/custom/rarity/epi_esc/bow_pulling_0"
+                    }
+                  },
+                  {
+                    "when": "minecraft:rarity/leg/leg",
+                    "model": {
+                      "type": "model",
+                      "model": "minecraft:item/custom/rarity/leg/bow_pulling_0"
+                    }
+                  },
+                  {
+                    "when": "minecraft:rarity/ult/ult",
+                    "model": {
+                      "type": "model",
+                      "model": "minecraft:item/custom/rarity/ult/bow_pulling_0"
+                    }
+                  }
+                ],
+                "fallback": {
+                  "type": "model",
+                  "model": "minecraft:item/bow_pulling_0"
+                }
+              }
+            }
+          ],
+          "fallback": {
+            "type": "model",
+            "model": "minecraft:item/bow_pulling_0"
+          }
         }
-      },
-      "property": "minecraft:use_duration",
-      "scale": 0.05
-    },
-    "property": "minecraft:using_item"
+      }
+    }
   }
 }

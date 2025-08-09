@@ -10,14 +10,96 @@
             {
               "threshold": 10000100,
               "model": {
-                "type": "model",
-                "model": "item/custom/interfacer_aiming"
+                "type": "select",
+                "property": "display_context",
+                "cases": [
+                  {
+                    "when": "gui",
+                    "model": {
+                      "type": "model",
+                      "model": "minecraft:item/custom/rarity/myt/interfacer_aiming"
+                    }
+                  }
+                ],
+                "fallback": {
+                  "type": "model",
+                  "model": "minecraft:item/custom/interfacer_aiming"
+                }
               }
             }
           ],
           "fallback": {
-            "type": "minecraft:model",
-            "model": "minecraft:item/crossbow_arrow"
+            "type": "select",
+            "property": "display_context",
+            "cases": [
+              {
+                "when": "gui",
+                "model": {
+                  "type": "select",
+                  "property": "component",
+                  "component": "tooltip_style",
+                  "cases": [
+                    {
+                      "when": "minecraft:rarity/com/com",
+                      "model": {
+                        "type": "model",
+                        "model": "minecraft:item/custom/rarity/com/crossbow_arrow"
+                      }
+                    },
+                    {
+                      "when": "minecraft:rarity/unc/unc",
+                      "model": {
+                        "type": "model",
+                        "model": "minecraft:item/custom/rarity/unc/crossbow_arrow"
+                      }
+                    },
+                    {
+                      "when": "minecraft:rarity/rar/rar",
+                      "model": {
+                        "type": "model",
+                        "model": "minecraft:item/custom/rarity/rar/crossbow_arrow"
+                      }
+                    },
+                    {
+                      "when": "minecraft:rarity/epi/epi",
+                      "model": {
+                        "type": "model",
+                        "model": "minecraft:item/custom/rarity/epi/crossbow_arrow"
+                      }
+                    },
+                    {
+                      "when": "minecraft:rarity/epi_esc/epi_esc",
+                      "model": {
+                        "type": "model",
+                        "model": "minecraft:item/custom/rarity/epi_esc/crossbow_arrow"
+                      }
+                    },
+                    {
+                      "when": "minecraft:rarity/leg/leg",
+                      "model": {
+                        "type": "model",
+                        "model": "minecraft:item/custom/rarity/leg/crossbow_arrow"
+                      }
+                    },
+                    {
+                      "when": "minecraft:rarity/ult/ult",
+                      "model": {
+                        "type": "model",
+                        "model": "minecraft:item/custom/rarity/ult/crossbow_arrow"
+                      }
+                    }
+                  ],
+                  "fallback": {
+                    "type": "model",
+                    "model": "minecraft:item/crossbow_arrow"
+                  }
+                }
+              }
+            ],
+            "fallback": {
+              "type": "model",
+              "model": "minecraft:item/crossbow_arrow"
+            }
           }
         },
         "when": "arrow"
@@ -39,14 +121,96 @@
           {
             "threshold": 10000100,
             "model": {
-              "type": "model",
-              "model": "item/custom/interfacer"
+              "type": "select",
+              "property": "display_context",
+              "cases": [
+                {
+                  "when": "gui",
+                  "model": {
+                    "type": "model",
+                    "model": "minecraft:item/custom/rarity/myt/interfacer"
+                  }
+                }
+              ],
+              "fallback": {
+                "type": "model",
+                "model": "minecraft:item/custom/interfacer"
+              }
             }
           }
         ],
         "fallback": {
-          "type": "minecraft:model",
-          "model": "minecraft:item/crossbow"
+          "type": "select",
+          "property": "display_context",
+          "cases": [
+            {
+              "when": "gui",
+              "model": {
+                "type": "select",
+                "property": "component",
+                "component": "tooltip_style",
+                "cases": [
+                  {
+                    "when": "minecraft:rarity/com/com",
+                    "model": {
+                      "type": "model",
+                      "model": "minecraft:item/custom/rarity/com/crossbow"
+                    }
+                  },
+                  {
+                    "when": "minecraft:rarity/unc/unc",
+                    "model": {
+                      "type": "model",
+                      "model": "minecraft:item/custom/rarity/unc/crossbow"
+                    }
+                  },
+                  {
+                    "when": "minecraft:rarity/rar/rar",
+                    "model": {
+                      "type": "model",
+                      "model": "minecraft:item/custom/rarity/rar/crossbow"
+                    }
+                  },
+                  {
+                    "when": "minecraft:rarity/epi/epi",
+                    "model": {
+                      "type": "model",
+                      "model": "minecraft:item/custom/rarity/epi/crossbow"
+                    }
+                  },
+                  {
+                    "when": "minecraft:rarity/epi_esc/epi_esc",
+                    "model": {
+                      "type": "model",
+                      "model": "minecraft:item/custom/rarity/epi_esc/crossbow"
+                    }
+                  },
+                  {
+                    "when": "minecraft:rarity/leg/leg",
+                    "model": {
+                      "type": "model",
+                      "model": "minecraft:item/custom/rarity/leg/crossbow"
+                    }
+                  },
+                  {
+                    "when": "minecraft:rarity/ult/ult",
+                    "model": {
+                      "type": "model",
+                      "model": "minecraft:item/custom/rarity/ult/crossbow"
+                    }
+                  }
+                ],
+                "fallback": {
+                  "type": "model",
+                  "model": "minecraft:item/crossbow"
+                }
+              }
+            }
+          ],
+          "fallback": {
+            "type": "model",
+            "model": "minecraft:item/crossbow"
+          }
         }
       },
       "on_true": {
@@ -60,14 +224,96 @@
                 {
                   "threshold": 10000100,
                   "model": {
-                    "type": "model",
-                    "model": "item/custom/interfacer"
+                    "type": "select",
+                    "property": "display_context",
+                    "cases": [
+                      {
+                        "when": "gui",
+                        "model": {
+                          "type": "model",
+                          "model": "minecraft:item/custom/rarity/myt/interfacer"
+                        }
+                      }
+                    ],
+                    "fallback": {
+                      "type": "model",
+                      "model": "minecraft:item/custom/interfacer"
+                    }
                   }
                 }
               ],
               "fallback": {
-                "type": "minecraft:model",
-                "model": "minecraft:item/crossbow_pulling_1"
+                "type": "select",
+                "property": "display_context",
+                "cases": [
+                  {
+                    "when": "gui",
+                    "model": {
+                      "type": "select",
+                      "property": "component",
+                      "component": "tooltip_style",
+                      "cases": [
+                        {
+                          "when": "minecraft:rarity/com/com",
+                          "model": {
+                            "type": "model",
+                            "model": "minecraft:item/custom/rarity/com/crossbow_pulling_1"
+                          }
+                        },
+                        {
+                          "when": "minecraft:rarity/unc/unc",
+                          "model": {
+                            "type": "model",
+                            "model": "minecraft:item/custom/rarity/unc/crossbow_pulling_1"
+                          }
+                        },
+                        {
+                          "when": "minecraft:rarity/rar/rar",
+                          "model": {
+                            "type": "model",
+                            "model": "minecraft:item/custom/rarity/rar/crossbow_pulling_1"
+                          }
+                        },
+                        {
+                          "when": "minecraft:rarity/epi/epi",
+                          "model": {
+                            "type": "model",
+                            "model": "minecraft:item/custom/rarity/epi/crossbow_pulling_1"
+                          }
+                        },
+                        {
+                          "when": "minecraft:rarity/epi_esc/epi_esc",
+                          "model": {
+                            "type": "model",
+                            "model": "minecraft:item/custom/rarity/epi_esc/crossbow_pulling_1"
+                          }
+                        },
+                        {
+                          "when": "minecraft:rarity/leg/leg",
+                          "model": {
+                            "type": "model",
+                            "model": "minecraft:item/custom/rarity/leg/crossbow_pulling_1"
+                          }
+                        },
+                        {
+                          "when": "minecraft:rarity/ult/ult",
+                          "model": {
+                            "type": "model",
+                            "model": "minecraft:item/custom/rarity/ult/crossbow_pulling_1"
+                          }
+                        }
+                      ],
+                      "fallback": {
+                        "type": "model",
+                        "model": "minecraft:item/crossbow_pulling_1"
+                      }
+                    }
+                  }
+                ],
+                "fallback": {
+                  "type": "model",
+                  "model": "minecraft:item/crossbow_pulling_1"
+                }
               }
             },
             "threshold": 0.58
@@ -80,14 +326,96 @@
                 {
                   "threshold": 10000100,
                   "model": {
-                    "type": "model",
-                    "model": "item/custom/interfacer"
+                    "type": "select",
+                    "property": "display_context",
+                    "cases": [
+                      {
+                        "when": "gui",
+                        "model": {
+                          "type": "model",
+                          "model": "minecraft:item/custom/rarity/myt/interfacer"
+                        }
+                      }
+                    ],
+                    "fallback": {
+                      "type": "model",
+                      "model": "minecraft:item/custom/interfacer"
+                    }
                   }
                 }
               ],
               "fallback": {
-                "type": "minecraft:model",
-                "model": "minecraft:item/crossbow_pulling_2"
+                "type": "select",
+                "property": "display_context",
+                "cases": [
+                  {
+                    "when": "gui",
+                    "model": {
+                      "type": "select",
+                      "property": "component",
+                      "component": "tooltip_style",
+                      "cases": [
+                        {
+                          "when": "minecraft:rarity/com/com",
+                          "model": {
+                            "type": "model",
+                            "model": "minecraft:item/custom/rarity/com/crossbow_pulling_2"
+                          }
+                        },
+                        {
+                          "when": "minecraft:rarity/unc/unc",
+                          "model": {
+                            "type": "model",
+                            "model": "minecraft:item/custom/rarity/unc/crossbow_pulling_2"
+                          }
+                        },
+                        {
+                          "when": "minecraft:rarity/rar/rar",
+                          "model": {
+                            "type": "model",
+                            "model": "minecraft:item/custom/rarity/rar/crossbow_pulling_2"
+                          }
+                        },
+                        {
+                          "when": "minecraft:rarity/epi/epi",
+                          "model": {
+                            "type": "model",
+                            "model": "minecraft:item/custom/rarity/epi/crossbow_pulling_2"
+                          }
+                        },
+                        {
+                          "when": "minecraft:rarity/epi_esc/epi_esc",
+                          "model": {
+                            "type": "model",
+                            "model": "minecraft:item/custom/rarity/epi_esc/crossbow_pulling_2"
+                          }
+                        },
+                        {
+                          "when": "minecraft:rarity/leg/leg",
+                          "model": {
+                            "type": "model",
+                            "model": "minecraft:item/custom/rarity/leg/crossbow_pulling_2"
+                          }
+                        },
+                        {
+                          "when": "minecraft:rarity/ult/ult",
+                          "model": {
+                            "type": "model",
+                            "model": "minecraft:item/custom/rarity/ult/crossbow_pulling_2"
+                          }
+                        }
+                      ],
+                      "fallback": {
+                        "type": "model",
+                        "model": "minecraft:item/crossbow_pulling_2"
+                      }
+                    }
+                  }
+                ],
+                "fallback": {
+                  "type": "model",
+                  "model": "minecraft:item/crossbow_pulling_2"
+                }
               }
             },
             "threshold": 1.0
@@ -100,14 +428,96 @@
             {
               "threshold": 10000100,
               "model": {
-                "type": "model",
-                "model": "item/custom/interfacer"
+                "type": "select",
+                "property": "display_context",
+                "cases": [
+                  {
+                    "when": "gui",
+                    "model": {
+                      "type": "model",
+                      "model": "minecraft:item/custom/rarity/myt/interfacer"
+                    }
+                  }
+                ],
+                "fallback": {
+                  "type": "model",
+                  "model": "minecraft:item/custom/interfacer"
+                }
               }
             }
           ],
           "fallback": {
-            "type": "minecraft:model",
-            "model": "minecraft:item/crossbow_pulling_0"
+            "type": "select",
+            "property": "display_context",
+            "cases": [
+              {
+                "when": "gui",
+                "model": {
+                  "type": "select",
+                  "property": "component",
+                  "component": "tooltip_style",
+                  "cases": [
+                    {
+                      "when": "minecraft:rarity/com/com",
+                      "model": {
+                        "type": "model",
+                        "model": "minecraft:item/custom/rarity/com/crossbow_pulling_0"
+                      }
+                    },
+                    {
+                      "when": "minecraft:rarity/unc/unc",
+                      "model": {
+                        "type": "model",
+                        "model": "minecraft:item/custom/rarity/unc/crossbow_pulling_0"
+                      }
+                    },
+                    {
+                      "when": "minecraft:rarity/rar/rar",
+                      "model": {
+                        "type": "model",
+                        "model": "minecraft:item/custom/rarity/rar/crossbow_pulling_0"
+                      }
+                    },
+                    {
+                      "when": "minecraft:rarity/epi/epi",
+                      "model": {
+                        "type": "model",
+                        "model": "minecraft:item/custom/rarity/epi/crossbow_pulling_0"
+                      }
+                    },
+                    {
+                      "when": "minecraft:rarity/epi_esc/epi_esc",
+                      "model": {
+                        "type": "model",
+                        "model": "minecraft:item/custom/rarity/epi_esc/crossbow_pulling_0"
+                      }
+                    },
+                    {
+                      "when": "minecraft:rarity/leg/leg",
+                      "model": {
+                        "type": "model",
+                        "model": "minecraft:item/custom/rarity/leg/crossbow_pulling_0"
+                      }
+                    },
+                    {
+                      "when": "minecraft:rarity/ult/ult",
+                      "model": {
+                        "type": "model",
+                        "model": "minecraft:item/custom/rarity/ult/crossbow_pulling_0"
+                      }
+                    }
+                  ],
+                  "fallback": {
+                    "type": "model",
+                    "model": "minecraft:item/crossbow_pulling_0"
+                  }
+                }
+              }
+            ],
+            "fallback": {
+              "type": "model",
+              "model": "minecraft:item/crossbow_pulling_0"
+            }
           }
         },
         "property": "minecraft:crossbow/pull"

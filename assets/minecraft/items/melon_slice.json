@@ -1,6 +1,19 @@
 {
   "model": {
-    "type": "minecraft:model",
-    "model": "minecraft:item/melon_slice"
+    "type": "select",
+    "property": "display_context",
+    "cases": [
+      {
+        "when": "gui",
+        "model": {
+          "type": "model",
+          "model": "minecraft:item/custom/rarity/misc/melon_slice"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "minecraft:item/melon_slice"
+    }
   }
 }

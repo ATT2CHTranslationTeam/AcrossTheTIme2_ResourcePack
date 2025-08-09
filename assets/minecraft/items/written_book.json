@@ -1,6 +1,241 @@
 {
   "model": {
-    "type": "minecraft:model",
-    "model": "minecraft:item/written_book"
+    "type": "minecraft:select",
+    "property": "minecraft:display_context",
+    "cases": [
+      {
+        "when": "gui",
+        "model": {
+          "type": "minecraft:range_dispatch",
+          "property": "minecraft:custom_model_data",
+          "entries": [
+            {
+              "threshold": 34001,
+              "model": {
+                "type": "model",
+                "model": "item/custom/spell_book/spell1"
+              }
+            },
+            {
+              "threshold": 34002,
+              "model": {
+                "type": "model",
+                "model": "item/custom/spell_book/spell2"
+              }
+            },
+            {
+              "threshold": 34003,
+              "model": {
+                "type": "model",
+                "model": "item/custom/spell_book/spell3"
+              }
+            },
+            {
+              "threshold": 34004,
+              "model": {
+                "type": "model",
+                "model": "item/custom/spell_book/spell4"
+              }
+            },
+            {
+              "threshold": 34005,
+              "model": {
+                "type": "model",
+                "model": "item/custom/spell_book/spell5"
+              }
+            },
+            {
+              "threshold": 34006,
+              "model": {
+                "type": "model",
+                "model": "item/custom/spell_book/spell6"
+              }
+            },
+            {
+              "threshold": 34007,
+              "model": {
+                "type": "model",
+                "model": "item/custom/spell_book/spell7"
+              }
+            },
+            {
+              "threshold": 34008,
+              "model": {
+                "type": "model",
+                "model": "item/custom/spell_book/spell8"
+              }
+            },
+            {
+              "threshold": 34009,
+              "model": {
+                "type": "model",
+                "model": "item/custom/spell_book/spell9"
+              }
+            },
+            {
+              "threshold": 34010,
+              "model": {
+                "type": "model",
+                "model": "item/custom/spell_book/spell10"
+              }
+            },
+            {
+              "threshold": 34011,
+              "model": {
+                "type": "model",
+                "model": "item/custom/spell_book/spell11"
+              }
+            },
+            {
+              "threshold": 34021,
+              "model": {
+                "type": "model",
+                "model": "item/custom/spell_book/spell21"
+              }
+            },
+            {
+              "threshold": 34022,
+              "model": {
+                "type": "model",
+                "model": "item/custom/spell_book/spell22"
+              }
+            },
+            {
+              "threshold": 34023,
+              "model": {
+                "type": "model",
+                "model": "item/custom/spell_book/spell23"
+              }
+            },
+            {
+              "threshold": 34024,
+              "model": {
+                "type": "model",
+                "model": "item/custom/spell_book/spell24"
+              }
+            },
+            {
+              "threshold": 34025,
+              "model": {
+                "type": "model",
+                "model": "item/custom/spell_book/spell25"
+              }
+            },
+            {
+              "threshold": 34026,
+              "model": {
+                "type": "model",
+                "model": "item/custom/spell_book/spell26"
+              }
+            },
+            {
+              "threshold": 34027,
+              "model": {
+                "type": "model",
+                "model": "item/custom/spell_book/spell27"
+              }
+            },
+            {
+              "threshold": 34028,
+              "model": {
+                "type": "model",
+                "model": "item/custom/spell_book/spell28"
+              }
+            },
+            {
+              "threshold": 34030,
+              "model": {
+                "type": "model",
+                "model": "item/custom/spell_book/spell30"
+              }
+            },
+            {
+              "threshold": 34031,
+              "model": {
+                "type": "model",
+                "model": "item/custom/spell_book/spell31"
+              }
+            },
+            {
+              "threshold": 34032,
+              "model": {
+                "type": "model",
+                "model": "item/custom/spell_book/spell32"
+              }
+            },
+            {
+              "threshold": 34034,
+              "model": {
+                "type": "model",
+                "model": "item/custom/spell_book/spell34"
+              }
+            },
+            {
+              "threshold": 34040,
+              "model": {
+                "type": "model",
+                "model": "item/custom/spell_book/spell40"
+              }
+            },
+            {
+              "threshold": 34041,
+              "model": {
+                "type": "model",
+                "model": "item/custom/spell_book/spell41"
+              }
+            },
+            {
+              "threshold": 34042,
+              "model": {
+                "type": "model",
+                "model": "item/custom/spell_book/spell42"
+              }
+            },
+            {
+              "threshold": 34043,
+              "model": {
+                "type": "model",
+                "model": "item/custom/spell_book/spell43"
+              }
+            },
+            {
+              "threshold": 34044,
+              "model": {
+                "type": "model",
+                "model": "item/custom/spell_book/spell44"
+              }
+            },
+            {
+              "threshold": 34045,
+              "model": {
+                "type": "model",
+                "model": "item/custom/spell_book/spell45"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "select",
+            "property": "display_context",
+            "cases": [
+              {
+                "when": "gui",
+                "model": {
+                  "type": "model",
+                  "model": "minecraft:item/custom/rarity/misc/written_book"
+                }
+              }
+            ],
+            "fallback": {
+              "type": "model",
+              "model": "minecraft:item/written_book"
+            }
+          }
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/enchanted_book"
+    }
   }
 }

@@ -1,0 +1,6 @@
+{
+    "parent": "item/custom/warbow_pulling_0",
+    "textures": {
+        "layer1": "item/custom/rarity/myt"
+    }
+}

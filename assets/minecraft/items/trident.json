@@ -10,8 +10,21 @@
             {
               "threshold": 10000000,
               "model": {
-                "type": "model",
-                "model": "item/custom/weaponsking"
+                "type": "select",
+                "property": "display_context",
+                "cases": [
+                  {
+                    "when": "gui",
+                    "model": {
+                      "type": "model",
+                      "model": "minecraft:item/custom/rarity/myt/weaponsking"
+                    }
+                  }
+                ],
+                "fallback": {
+                  "type": "model",
+                  "model": "minecraft:item/custom/weaponsking"
+                }
               }
             }
           ],

@@ -1,0 +1,6 @@
+{
+    "parent": "item/cooked_chicken",
+    "textures": {
+        "layer1": "item/custom/rarity/misc"
+    }
+}

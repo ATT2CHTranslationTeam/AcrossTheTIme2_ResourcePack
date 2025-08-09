@@ -1,6 +1,19 @@
 {
   "model": {
-    "type": "minecraft:model",
-    "model": "minecraft:block/emerald_block"
+    "type": "select",
+    "property": "display_context",
+    "cases": [
+      {
+        "when": "gui",
+        "model": {
+          "type": "model",
+          "model": "minecraft:item/custom/rarity/quest/emerald_block"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "minecraft:block/emerald_block"
+    }
   }
 }
