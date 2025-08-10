@@ -1,0 +1,6 @@
+{
+    "parent": "item/bow_pulling_2",
+    "textures": {
+        "layer1": "item/custom/rarity/ult"
+    }
+}

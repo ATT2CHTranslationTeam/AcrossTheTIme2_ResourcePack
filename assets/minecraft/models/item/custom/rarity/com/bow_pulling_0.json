@@ -1,5 +1,5 @@
 {
-    "parent": "item/elytra",
+    "parent": "item/bow_pulling_0",
     "textures": {
         "layer1": "item/custom/rarity/com"
     }

@@ -1,6 +1,6 @@
 {
     "parent": "item/leather_chestplate",
     "textures": {
-        "layer1": "item/custom/rarity/ult"
+        "layer2": "item/custom/rarity/ult"
     }
 }

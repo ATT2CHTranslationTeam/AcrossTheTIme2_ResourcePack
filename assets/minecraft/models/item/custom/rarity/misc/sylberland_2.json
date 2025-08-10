@@ -1,0 +1,6 @@
+{
+    "parent": "item/custom/map/sylberland_2",
+    "textures": {
+        "layer1": "item/custom/rarity/misc"
+    }
+}

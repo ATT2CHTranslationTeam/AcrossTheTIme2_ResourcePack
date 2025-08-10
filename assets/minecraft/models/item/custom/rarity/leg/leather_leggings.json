@@ -1,6 +1,6 @@
 {
     "parent": "item/leather_leggings",
     "textures": {
-        "layer1": "item/custom/rarity/leg"
+        "layer2": "item/custom/rarity/leg"
     }
 }

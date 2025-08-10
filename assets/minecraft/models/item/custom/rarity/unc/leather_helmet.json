@@ -1,6 +1,6 @@
 {
     "parent": "item/leather_helmet",
     "textures": {
-        "layer1": "item/custom/rarity/unc"
+        "layer2": "item/custom/rarity/unc"
     }
 }
