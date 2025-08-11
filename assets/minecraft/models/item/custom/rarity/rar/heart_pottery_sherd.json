@@ -1,0 +1,6 @@
+{
+    "parent": "item/heart_pottery_sherd",
+    "textures": {
+        "layer1": "item/custom/rarity/rar"
+    }
+}

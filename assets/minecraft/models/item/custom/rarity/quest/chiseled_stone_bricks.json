@@ -1,0 +1,6 @@
+{
+    "parent": "item/chiseled_stone_bricks",
+    "textures": {
+        "layer1": "item/custom/rarity/quest"
+    }
+}

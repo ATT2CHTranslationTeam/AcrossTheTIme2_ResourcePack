@@ -1,0 +1,6 @@
+{
+    "parent": "item/slime_ball",
+    "textures": {
+        "layer1": "item/custom/rarity/quest"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "item/iron_axe",
+    "textures": {
+        "layer1": "item/custom/rarity/ult"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "item/explorer_pottery_sherd",
+    "textures": {
+        "layer1": "item/custom/rarity/rar"
+    }
+}

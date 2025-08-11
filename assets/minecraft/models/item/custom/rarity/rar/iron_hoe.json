@@ -1,0 +1,6 @@
+{
+    "parent": "item/iron_hoe",
+    "textures": {
+        "layer1": "item/custom/rarity/rar"
+    }
+}

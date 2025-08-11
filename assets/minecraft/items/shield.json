@@ -1,20 +1,113 @@
 {
   "model": {
-    "type": "minecraft:condition",
-    "on_false": {
-      "type": "minecraft:special",
-      "base": "minecraft:item/shield",
-      "model": {
-        "type": "minecraft:shield"
+    "type": "select",
+    "property": "display_context",
+    "cases": [
+      {
+        "when": "gui",
+        "model": {
+          "type": "select",
+          "property": "component",
+          "component": "tooltip_style",
+          "cases": [
+            {
+              "when": "minecraft:rarity/com/com",
+              "model": {
+                "type": "minecraft:special",
+                "base": "minecraft:item/custom/rarity/com/shield",
+                "model": {
+                  "type": "minecraft:shield"
+                }
+              }
+            },
+            {
+              "when": "minecraft:rarity/unc/unc",
+              "model": {
+                "type": "minecraft:special",
+                "base": "minecraft:item/custom/rarity/unc/shield",
+                "model": {
+                  "type": "minecraft:shield"
+                }
+              }
+            },
+            {
+              "when": "minecraft:rarity/rar/rar",
+              "model": {
+                "type": "minecraft:special",
+                "base": "minecraft:item/custom/rarity/rar/shield",
+                "model": {
+                  "type": "minecraft:shield"
+                }
+              }
+            },
+            {
+              "when": "minecraft:rarity/epi/epi",
+              "model": {
+                "type": "minecraft:special",
+                "base": "minecraft:item/custom/rarity/epi/shield",
+                "model": {
+                  "type": "minecraft:shield"
+                }
+              }
+            },
+            {
+              "when": "minecraft:rarity/epi_esc/epi_esc",
+              "model": {
+                "type": "minecraft:special",
+                "base": "minecraft:item/custom/rarity/epi_esc/shield",
+                "model": {
+                  "type": "minecraft:shield"
+                }
+              }
+            },
+            {
+              "when": "minecraft:rarity/leg/leg",
+              "model": {
+                "type": "minecraft:special",
+                "base": "minecraft:item/custom/rarity/leg/shield",
+                "model": {
+                  "type": "minecraft:shield"
+                }
+              }
+            },
+            {
+              "when": "minecraft:rarity/ult/ult",
+              "model": {
+                "type": "minecraft:special",
+                "base": "minecraft:item/custom/rarity/ult/shield",
+                "model": {
+                  "type": "minecraft:shield"
+                }
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:special",
+            "base": "minecraft:item/custom/rarity/ult/shield",
+            "model": {
+              "type": "minecraft:shield"
+            }
+          }
+        }
       }
-    },
-    "on_true": {
-      "type": "minecraft:special",
-      "base": "minecraft:item/shield_blocking",
-      "model": {
-        "type": "minecraft:shield"
-      }
-    },
-    "property": "minecraft:using_item"
+    ],
+    "fallback": {
+      "type": "minecraft:condition",
+      "on_false": {
+        "type": "minecraft:special",
+        "base": "minecraft:item/shield",
+        "model": {
+          "type": "minecraft:shield"
+        }
+      },
+      "on_true": {
+        "type": "minecraft:special",
+        "base": "minecraft:item/shield_blocking",
+        "model": {
+          "type": "minecraft:shield"
+        }
+      },
+      "property": "minecraft:using_item"
+    }
   }
 }

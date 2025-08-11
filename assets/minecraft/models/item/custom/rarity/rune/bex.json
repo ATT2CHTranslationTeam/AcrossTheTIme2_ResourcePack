@@ -1,0 +1,6 @@
+{
+    "parent": "item/custom/runes/bex",
+    "textures": {
+        "layer1": "item/custom/rarity/rune_high"
+    }
+}

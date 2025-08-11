@@ -1,0 +1,6 @@
+{
+    "parent": "item/leather_chestplate",
+    "textures": {
+        "layer2": "item/custom/rarity/epi_esc"
+    }
+}

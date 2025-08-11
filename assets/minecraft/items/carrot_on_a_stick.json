@@ -4,14 +4,26 @@
     "property": "minecraft:component",
     "predicate": "minecraft:custom_data",
     "value": {
-        "Launch": false
-      },
+      "Launch": false
+    },
     "on_false": {
       "type": "minecraft:range_dispatch",
       "property": "minecraft:custom_model_data",
       "entries": [
-        {"threshold": 1000001,"model": {"type": "model","model": "item/custom/magic_sphere_cast"}},
-        {"threshold": 1,"model": {"type": "model","model": "item/carrot"}}
+        {
+          "threshold": 1000001,
+          "model": {
+            "type": "model",
+            "model": "item/custom/magic_sphere_cast"
+          }
+        },
+        {
+          "threshold": 1,
+          "model": {
+            "type": "model",
+            "model": "item/carrot"
+          }
+        }
       ],
       "fallback": {
         "type": "minecraft:model",

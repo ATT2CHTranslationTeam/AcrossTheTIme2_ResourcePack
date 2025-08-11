@@ -1,0 +1,6 @@
+{
+    "parent": "item/custom/fire_soul",
+    "textures": {
+        "layer1": "item/custom/rarity/myt"
+    }
+}

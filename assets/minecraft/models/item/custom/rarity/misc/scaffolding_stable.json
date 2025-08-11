@@ -1,0 +1,9 @@
+{
+    "parent": "block/scaffolding_stable",
+    "textures": {
+        "layer1": "item/custom/rarity/misc",
+        "layer2": "item/custom/rarity/misc",
+        "layer3": "item/custom/rarity/misc",
+        "layer4": "item/custom/rarity/misc"
+    }
+}

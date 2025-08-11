@@ -1,0 +1,6 @@
+{
+    "parent": "item/leather_leggings",
+    "textures": {
+        "layer2": "item/custom/rarity/epi_set"
+    }
+}

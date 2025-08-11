@@ -1,0 +1,6 @@
+{
+    "parent": "item/spruce_log",
+    "textures": {
+        "layer1": "item/custom/rarity/quest"
+    }
+}

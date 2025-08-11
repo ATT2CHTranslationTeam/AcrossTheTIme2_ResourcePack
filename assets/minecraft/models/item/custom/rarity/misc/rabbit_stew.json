@@ -1,0 +1,6 @@
+{
+    "parent": "item/rabbit_stew",
+    "textures": {
+        "layer1": "item/custom/rarity/misc"
+    }
+}

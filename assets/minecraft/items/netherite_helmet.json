@@ -81,8 +81,98 @@
       }
     ],
     "fallback": {
-      "type": "minecraft:model",
-      "model": "minecraft:item/netherite_helmet"
+      "type": "select",
+      "property": "display_context",
+      "cases": [
+        {
+          "when": "gui",
+          "model": {
+            "type": "select",
+            "property": "component",
+            "component": "tooltip_style",
+            "cases": [
+              {
+                "when": "minecraft:rarity/com/com",
+                "model": {
+                  "type": "model",
+                  "model": "minecraft:item/custom/rarity/com/netherite_helmet"
+                }
+              },
+              {
+                "when": "minecraft:rarity/unc/unc",
+                "model": {
+                  "type": "model",
+                  "model": "minecraft:item/custom/rarity/unc/netherite_helmet"
+                }
+              },
+              {
+                "when": "minecraft:rarity/rar/rar",
+                "model": {
+                  "type": "model",
+                  "model": "minecraft:item/custom/rarity/rar/netherite_helmet"
+                }
+              },
+              {
+                "when": "minecraft:rarity/epi/epi",
+                "model": {
+                  "type": "model",
+                  "model": "minecraft:item/custom/rarity/epi/netherite_helmet"
+                }
+              },
+              {
+                "when": "minecraft:rarity/epi_esc/epi_esc",
+                "model": {
+                  "type": "model",
+                  "model": "minecraft:item/custom/rarity/epi_esc/netherite_helmet"
+                }
+              },
+              {
+                "when": "minecraft:rarity/epi_set/epi_set",
+                "model": {
+                  "type": "model",
+                  "model": "minecraft:item/custom/rarity/epi_set/netherite_helmet"
+                }
+              },
+              {
+                "when": "minecraft:rarity/leg/leg",
+                "model": {
+                  "type": "model",
+                  "model": "minecraft:item/custom/rarity/leg/netherite_helmet"
+                }
+              },
+              {
+                "when": "minecraft:rarity/leg_armset/leg_armset",
+                "model": {
+                  "type": "model",
+                  "model": "minecraft:item/custom/rarity/leg_armset/netherite_helmet"
+                }
+              },
+              {
+                "when": "minecraft:rarity/ult/ult",
+                "model": {
+                  "type": "model",
+                  "model": "minecraft:item/custom/rarity/ult/netherite_helmet"
+                }
+              },
+              {
+                "when": "minecraft:rarity/myt/myt",
+                "model": {
+                  "type": "model",
+                  "model": "minecraft:item/custom/rarity/myt/netherite_helmet"
+                }
+              }
+            ],
+            "fallback": {
+              "type": "model",
+              "model": "minecraft:item/netherite_helmet"
+            }
+          }
+        }
+      ],
+      "fallback": {
+        "type": "model",
+        "model": "minecraft:item/netherite_helmet"
+      }
     },
     "property": "minecraft:trim_material"
   }

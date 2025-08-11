@@ -1,0 +1,6 @@
+{
+    "parent": "item/leather_helmet",
+    "textures": {
+        "layer2": "item/custom/rarity/leg_armset"
+    }
+}

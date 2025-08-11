@@ -1,0 +1,6 @@
+{
+    "parent": "item/player_head",
+    "textures": {
+        "layer1": "item/custom/rarity/quest"
+    }
+}

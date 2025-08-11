@@ -1,25 +1,128 @@
 {
   "model": {
     "type": "minecraft:condition",
-    "on_false": {      
-      "type": "minecraft:range_dispatch",
-      "property": "minecraft:custom_model_data",
-      "entries": [
-        {"threshold": 1000001,"model": {"type": "model","model": "item/custom/magic_sphere_uncast"}}
+    "on_false": {
+      "type": "select",
+      "property": "display_context",
+      "cases": [
+        {
+          "when": "gui",
+          "model": {
+            "type": "select",
+            "property": "component",
+            "component": "tooltip_style",
+            "cases": [
+              {
+                "when": "minecraft:rarity/com/com",
+                "model": {
+                  "type": "model",
+                  "model": "minecraft:item/custom/rarity/com/fishing_rod"
+                }
+              },
+              {
+                "when": "minecraft:rarity/unc/unc",
+                "model": {
+                  "type": "model",
+                  "model": "minecraft:item/custom/rarity/unc/fishing_rod"
+                }
+              },
+              {
+                "when": "minecraft:rarity/rar/rar",
+                "model": {
+                  "type": "model",
+                  "model": "minecraft:item/custom/rarity/rar/fishing_rod"
+                }
+              },
+              {
+                "when": "minecraft:rarity/epi/epi",
+                "model": {
+                  "type": "model",
+                  "model": "minecraft:item/custom/rarity/epi/fishing_rod"
+                }
+              },
+              {
+                "when": "minecraft:rarity/leg/leg",
+                "model": {
+                  "type": "model",
+                  "model": "minecraft:item/custom/rarity/leg/fishing_rod"
+                }
+              },
+              {
+                "when": "minecraft:rarity/ult/ult",
+                "model": {
+                  "type": "model",
+                  "model": "minecraft:item/custom/rarity/ult/fishing_rod"
+                }
+              }
+            ],
+            "fallback": {
+              "type": "model",
+              "model": "minecraft:item/fishing_rod"
+            }
+          }
+        }
       ],
       "fallback": {
-        "type": "minecraft:model",
+        "type": "model",
         "model": "minecraft:item/fishing_rod"
       }
     },
     "on_true": {
-      "type": "minecraft:range_dispatch",
-      "property": "minecraft:custom_model_data",
-      "entries": [
-        {"threshold": 1000001,"model": {"type": "model","model": "item/custom/magic_sphere_cast"}}
+      "type": "select",
+      "property": "display_context",
+      "cases": [
+        {
+          "when": "gui",
+          "model": {
+            "type": "select",
+            "property": "component",
+            "component": "tooltip_style",
+            "cases": [
+              {
+                "when": "minecraft:rarity/com/com",
+                "model": {
+                  "type": "model",
+                  "model": "minecraft:item/custom/rarity/com/fishing_rod_cast"
+                }
+              },
+              {
+                "when": "minecraft:rarity/unc/unc",
+                "model": {
+                  "type": "model",
+                  "model": "minecraft:item/custom/rarity/unc/fishing_rod_cast"
+                }
+              },
+              {
+                "when": "minecraft:rarity/rar/rar",
+                "model": {
+                  "type": "model",
+                  "model": "minecraft:item/custom/rarity/rar/fishing_rod_cast"
+                }
+              },
+              {
+                "when": "minecraft:rarity/epi/epi",
+                "model": {
+                  "type": "model",
+                  "model": "minecraft:item/custom/rarity/epi/fishing_rod_cast"
+                }
+              },
+              {
+                "when": "minecraft:rarity/leg/leg",
+                "model": {
+                  "type": "model",
+                  "model": "minecraft:item/custom/rarity/leg/fishing_rod_cast"
+                }
+              }
+            ],
+            "fallback": {
+              "type": "model",
+              "model": "minecraft:item/fishing_rod_cast"
+            }
+          }
+        }
       ],
       "fallback": {
-        "type": "minecraft:model",
+        "type": "model",
         "model": "minecraft:item/fishing_rod_cast"
       }
     },

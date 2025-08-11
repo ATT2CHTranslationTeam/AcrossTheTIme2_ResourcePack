@@ -1,0 +1,6 @@
+{
+    "parent": "item/custom/blood_eater",
+    "textures": {
+        "layer1": "item/custom/rarity/myt"
+    }
+}

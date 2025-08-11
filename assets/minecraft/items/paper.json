@@ -3,28 +3,541 @@
     "type": "range_dispatch",
     "property": "custom_model_data",
     "fallback": {
-      "type": "model",
-      "model": "minecraft:item/paper"
+      "type": "select",
+      "property": "display_context",
+      "cases": [
+        {
+          "when": "gui",
+          "model": {
+            "type": "select",
+            "property": "component",
+            "component": "tooltip_style",
+            "cases": [
+              {
+                "when": "minecraft:rarity/quest/quest",
+                "model": {
+                  "type": "model",
+                  "model": "minecraft:item/custom/rarity/quest/paper"
+                }
+              }
+            ],
+            "fallback": {
+              "type": "model",
+              "model": "minecraft:item/paper"
+            }
+          }
+        }
+      ],
+      "fallback": {
+        "type": "model",
+        "model": "minecraft:item/paper"
+      }
     },
     "entries": [
-      {"threshold":1,"model": {"type": "model","model": "item/custom/map/sylberland_1"}},
-      {"threshold":2,"model": {"type": "model","model": "item/custom/map/sylberland_2"}},
-      {"threshold":3,"model": {"type": "model","model": "item/custom/map/sylberland_3"}},
-      {"threshold":4,"model": {"type": "model","model": "item/custom/map/sylberland_4"}},
-      {"threshold":5,"model": {"type": "model","model": "item/custom/map/sylberland_5"}},
-      {"threshold":6,"model": {"type": "model","model": "item/custom/map/sylberland_6"}},
-      {"threshold":7,"model": {"type": "model","model": "item/custom/map/sylberland_7"}},
-      {"threshold":11,"model": {"type": "model","model": "item/custom/map/sylberland_11"}},
-      {"threshold":21,"model": {"type": "model","model": "item/custom/map/sylberland_21"}},
-      {"threshold":31,"model": {"type": "model","model": "item/custom/map/sylberland_31"}},
-      {"threshold":41,"model": {"type": "model","model": "item/custom/map/sylberland_41"}},
-      {"threshold":51,"model": {"type": "model","model": "item/custom/map/sylberland_51"}},
-      {"threshold":61,"model": {"type": "model","model": "item/custom/map/sylberland_61"}},
-      {"threshold":71,"model": {"type": "model","model": "item/custom/map/sylberland_71"}},
-      {"threshold":1000,"model": {"type": "model","model": "item/custom/map/marker"}},
-      {"threshold":1001,"model": {"type": "model","model": "item/custom/map/now"}},
-      {"threshold":1002,"model": {"type": "model","model": "item/custom/map/selected"}},
-      {"threshold":1003,"model": {"type": "model","model": "item/custom/map/empty"}}
+      {
+        "threshold": 1,
+        "model": {
+          "type": "select",
+          "property": "display_context",
+          "cases": [
+            {
+              "when": "gui",
+              "model": {
+                "type": "select",
+                "property": "component",
+                "component": "tooltip_style",
+                "cases": [
+                  {
+                    "when": "minecraft:rarity/misc/misc",
+                    "model": {
+                      "type": "model",
+                      "model": "minecraft:item/custom/rarity/misc/sylberland_1"
+                    }
+                  }
+                ],
+                "fallback": {
+                  "type": "model",
+                  "model": "minecraft:item/sylberland_1"
+                }
+              }
+            }
+          ],
+          "fallback": {
+            "type": "model",
+            "model": "minecraft:item/sylberland_1"
+          }
+        }
+      },
+      {
+        "threshold": 2,
+        "model": {
+          "type": "select",
+          "property": "display_context",
+          "cases": [
+            {
+              "when": "gui",
+              "model": {
+                "type": "select",
+                "property": "component",
+                "component": "tooltip_style",
+                "cases": [
+                  {
+                    "when": "minecraft:rarity/misc/misc",
+                    "model": {
+                      "type": "model",
+                      "model": "minecraft:item/custom/rarity/misc/sylberland_2"
+                    }
+                  }
+                ],
+                "fallback": {
+                  "type": "model",
+                  "model": "minecraft:item/sylberland_2"
+                }
+              }
+            }
+          ],
+          "fallback": {
+            "type": "model",
+            "model": "minecraft:item/sylberland_2"
+          }
+        }
+      },
+      {
+        "threshold": 3,
+        "model": {
+          "type": "select",
+          "property": "display_context",
+          "cases": [
+            {
+              "when": "gui",
+              "model": {
+                "type": "select",
+                "property": "component",
+                "component": "tooltip_style",
+                "cases": [
+                  {
+                    "when": "minecraft:rarity/misc/misc",
+                    "model": {
+                      "type": "model",
+                      "model": "minecraft:item/custom/rarity/misc/sylberland_3"
+                    }
+                  }
+                ],
+                "fallback": {
+                  "type": "model",
+                  "model": "minecraft:item/sylberland_3"
+                }
+              }
+            }
+          ],
+          "fallback": {
+            "type": "model",
+            "model": "minecraft:item/sylberland_3"
+          }
+        }
+      },
+      {
+        "threshold": 4,
+        "model": {
+          "type": "select",
+          "property": "display_context",
+          "cases": [
+            {
+              "when": "gui",
+              "model": {
+                "type": "select",
+                "property": "component",
+                "component": "tooltip_style",
+                "cases": [
+                  {
+                    "when": "minecraft:rarity/misc/misc",
+                    "model": {
+                      "type": "model",
+                      "model": "minecraft:item/custom/rarity/misc/sylberland_4"
+                    }
+                  }
+                ],
+                "fallback": {
+                  "type": "model",
+                  "model": "minecraft:item/sylberland_4"
+                }
+              }
+            }
+          ],
+          "fallback": {
+            "type": "model",
+            "model": "minecraft:item/sylberland_4"
+          }
+        }
+      },
+      {
+        "threshold": 5,
+        "model": {
+          "type": "select",
+          "property": "display_context",
+          "cases": [
+            {
+              "when": "gui",
+              "model": {
+                "type": "select",
+                "property": "component",
+                "component": "tooltip_style",
+                "cases": [
+                  {
+                    "when": "minecraft:rarity/misc/misc",
+                    "model": {
+                      "type": "model",
+                      "model": "minecraft:item/custom/rarity/misc/sylberland_5"
+                    }
+                  }
+                ],
+                "fallback": {
+                  "type": "model",
+                  "model": "minecraft:item/sylberland_5"
+                }
+              }
+            }
+          ],
+          "fallback": {
+            "type": "model",
+            "model": "minecraft:item/sylberland_5"
+          }
+        }
+      },
+      {
+        "threshold": 6,
+        "model": {
+          "type": "select",
+          "property": "display_context",
+          "cases": [
+            {
+              "when": "gui",
+              "model": {
+                "type": "select",
+                "property": "component",
+                "component": "tooltip_style",
+                "cases": [
+                  {
+                    "when": "minecraft:rarity/misc/misc",
+                    "model": {
+                      "type": "model",
+                      "model": "minecraft:item/custom/rarity/misc/sylberland_6"
+                    }
+                  }
+                ],
+                "fallback": {
+                  "type": "model",
+                  "model": "minecraft:item/sylberland_6"
+                }
+              }
+            }
+          ],
+          "fallback": {
+            "type": "model",
+            "model": "minecraft:item/sylberland_6"
+          }
+        }
+      },
+      {
+        "threshold": 7,
+        "model": {
+          "type": "select",
+          "property": "display_context",
+          "cases": [
+            {
+              "when": "gui",
+              "model": {
+                "type": "select",
+                "property": "component",
+                "component": "tooltip_style",
+                "cases": [
+                  {
+                    "when": "minecraft:rarity/misc/misc",
+                    "model": {
+                      "type": "model",
+                      "model": "minecraft:item/custom/rarity/misc/sylberland_7"
+                    }
+                  }
+                ],
+                "fallback": {
+                  "type": "model",
+                  "model": "minecraft:item/sylberland_7"
+                }
+              }
+            }
+          ],
+          "fallback": {
+            "type": "model",
+            "model": "minecraft:item/sylberland_7"
+          }
+        }
+      },
+      {
+        "threshold": 11,
+        "model": {
+          "type": "select",
+          "property": "display_context",
+          "cases": [
+            {
+              "when": "gui",
+              "model": {
+                "type": "select",
+                "property": "component",
+                "component": "tooltip_style",
+                "cases": [
+                  {
+                    "when": "minecraft:rarity/misc/misc",
+                    "model": {
+                      "type": "model",
+                      "model": "minecraft:item/custom/rarity/misc/sylberland_11"
+                    }
+                  }
+                ],
+                "fallback": {
+                  "type": "model",
+                  "model": "minecraft:item/sylberland_11"
+                }
+              }
+            }
+          ],
+          "fallback": {
+            "type": "model",
+            "model": "minecraft:item/sylberland_11"
+          }
+        }
+      },
+      {
+        "threshold": 21,
+        "model": {
+          "type": "select",
+          "property": "display_context",
+          "cases": [
+            {
+              "when": "gui",
+              "model": {
+                "type": "select",
+                "property": "component",
+                "component": "tooltip_style",
+                "cases": [
+                  {
+                    "when": "minecraft:rarity/misc/misc",
+                    "model": {
+                      "type": "model",
+                      "model": "minecraft:item/custom/rarity/misc/sylberland_21"
+                    }
+                  }
+                ],
+                "fallback": {
+                  "type": "model",
+                  "model": "minecraft:item/sylberland_21"
+                }
+              }
+            }
+          ],
+          "fallback": {
+            "type": "model",
+            "model": "minecraft:item/sylberland_21"
+          }
+        }
+      },
+      {
+        "threshold": 31,
+        "model": {
+          "type": "select",
+          "property": "display_context",
+          "cases": [
+            {
+              "when": "gui",
+              "model": {
+                "type": "select",
+                "property": "component",
+                "component": "tooltip_style",
+                "cases": [
+                  {
+                    "when": "minecraft:rarity/misc/misc",
+                    "model": {
+                      "type": "model",
+                      "model": "minecraft:item/custom/rarity/misc/sylberland_31"
+                    }
+                  }
+                ],
+                "fallback": {
+                  "type": "model",
+                  "model": "minecraft:item/sylberland_31"
+                }
+              }
+            }
+          ],
+          "fallback": {
+            "type": "model",
+            "model": "minecraft:item/sylberland_31"
+          }
+        }
+      },
+      {
+        "threshold": 41,
+        "model": {
+          "type": "select",
+          "property": "display_context",
+          "cases": [
+            {
+              "when": "gui",
+              "model": {
+                "type": "select",
+                "property": "component",
+                "component": "tooltip_style",
+                "cases": [
+                  {
+                    "when": "minecraft:rarity/misc/misc",
+                    "model": {
+                      "type": "model",
+                      "model": "minecraft:item/custom/rarity/misc/sylberland_41"
+                    }
+                  }
+                ],
+                "fallback": {
+                  "type": "model",
+                  "model": "minecraft:item/sylberland_41"
+                }
+              }
+            }
+          ],
+          "fallback": {
+            "type": "model",
+            "model": "minecraft:item/sylberland_41"
+          }
+        }
+      },
+      {
+        "threshold": 51,
+        "model": {
+          "type": "select",
+          "property": "display_context",
+          "cases": [
+            {
+              "when": "gui",
+              "model": {
+                "type": "select",
+                "property": "component",
+                "component": "tooltip_style",
+                "cases": [
+                  {
+                    "when": "minecraft:rarity/misc/misc",
+                    "model": {
+                      "type": "model",
+                      "model": "minecraft:item/custom/rarity/misc/sylberland_51"
+                    }
+                  }
+                ],
+                "fallback": {
+                  "type": "model",
+                  "model": "minecraft:item/sylberland_51"
+                }
+              }
+            }
+          ],
+          "fallback": {
+            "type": "model",
+            "model": "minecraft:item/sylberland_51"
+          }
+        }
+      },
+      {
+        "threshold": 61,
+        "model": {
+          "type": "select",
+          "property": "display_context",
+          "cases": [
+            {
+              "when": "gui",
+              "model": {
+                "type": "select",
+                "property": "component",
+                "component": "tooltip_style",
+                "cases": [
+                  {
+                    "when": "minecraft:rarity/misc/misc",
+                    "model": {
+                      "type": "model",
+                      "model": "minecraft:item/custom/rarity/misc/sylberland_61"
+                    }
+                  }
+                ],
+                "fallback": {
+                  "type": "model",
+                  "model": "minecraft:item/sylberland_61"
+                }
+              }
+            }
+          ],
+          "fallback": {
+            "type": "model",
+            "model": "minecraft:item/sylberland_61"
+          }
+        }
+      },
+      {
+        "threshold": 71,
+        "model": {
+          "type": "select",
+          "property": "display_context",
+          "cases": [
+            {
+              "when": "gui",
+              "model": {
+                "type": "select",
+                "property": "component",
+                "component": "tooltip_style",
+                "cases": [
+                  {
+                    "when": "minecraft:rarity/misc/misc",
+                    "model": {
+                      "type": "model",
+                      "model": "minecraft:item/custom/rarity/misc/sylberland_71"
+                    }
+                  }
+                ],
+                "fallback": {
+                  "type": "model",
+                  "model": "minecraft:item/sylberland_71"
+                }
+              }
+            }
+          ],
+          "fallback": {
+            "type": "model",
+            "model": "minecraft:item/sylberland_71"
+          }
+        }
+      },
+      {
+        "threshold": 1000,
+        "model": {
+          "type": "model",
+          "model": "item/custom/map/marker"
+        }
+      },
+      {
+        "threshold": 1001,
+        "model": {
+          "type": "model",
+          "model": "item/custom/map/now"
+        }
+      },
+      {
+        "threshold": 1002,
+        "model": {
+          "type": "model",
+          "model": "item/custom/map/selected"
+        }
+      },
+      {
+        "threshold": 1003,
+        "model": {
+          "type": "model",
+          "model": "item/custom/map/empty"
+        }
+      }
     ]
   }
 }

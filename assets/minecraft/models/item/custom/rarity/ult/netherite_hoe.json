@@ -1,0 +1,6 @@
+{
+    "parent": "item/netherite_hoe",
+    "textures": {
+        "layer1": "item/custom/rarity/ult"
+    }
+}

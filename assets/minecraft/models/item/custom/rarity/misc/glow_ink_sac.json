@@ -1,0 +1,6 @@
+{
+    "parent": "item/glow_ink_sac",
+    "textures": {
+        "layer1": "item/custom/rarity/misc"
+    }
+}

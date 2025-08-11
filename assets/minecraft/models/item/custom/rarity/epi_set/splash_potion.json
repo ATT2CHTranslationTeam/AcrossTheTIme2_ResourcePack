@@ -1,0 +1,6 @@
+{
+    "parent": "item/splash_potion",
+    "textures": {
+        "layer2": "item/custom/rarity/epi_set"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "item/custom/interfacer_aiming",
+    "textures": {
+        "layer1": "item/custom/rarity/myt"
+    }
+}

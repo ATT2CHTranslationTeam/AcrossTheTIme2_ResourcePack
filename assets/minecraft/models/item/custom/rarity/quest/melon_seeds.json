@@ -1,0 +1,6 @@
+{
+    "parent": "item/melon_seeds",
+    "textures": {
+        "layer1": "item/custom/rarity/quest"
+    }
+}

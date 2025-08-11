@@ -1,0 +1,6 @@
+{
+    "parent": "item/custom/runes/jo",
+    "textures": {
+        "layer1": "item/custom/rarity/rune_low"
+    }
+}

@@ -81,8 +81,77 @@
       }
     ],
     "fallback": {
-      "type": "minecraft:model",
-      "model": "minecraft:item/golden_chestplate"
+      "type": "select",
+      "property": "display_context",
+      "cases": [
+        {
+          "when": "gui",
+          "model": {
+            "type": "select",
+            "property": "component",
+            "component": "tooltip_style",
+            "cases": [
+              {
+                "when": "minecraft:rarity/com/com",
+                "model": {
+                  "type": "model",
+                  "model": "minecraft:item/custom/rarity/com/golden_chestplate"
+                }
+              },
+              {
+                "when": "minecraft:rarity/unc/unc",
+                "model": {
+                  "type": "model",
+                  "model": "minecraft:item/custom/rarity/unc/golden_chestplate"
+                }
+              },
+              {
+                "when": "minecraft:rarity/rar/rar",
+                "model": {
+                  "type": "model",
+                  "model": "minecraft:item/custom/rarity/rar/golden_chestplate"
+                }
+              },
+              {
+                "when": "minecraft:rarity/epi/epi",
+                "model": {
+                  "type": "model",
+                  "model": "minecraft:item/custom/rarity/epi/golden_chestplate"
+                }
+              },
+              {
+                "when": "minecraft:rarity/epi_set/epi_set",
+                "model": {
+                  "type": "model",
+                  "model": "minecraft:item/custom/rarity/epi_set/golden_chestplate"
+                }
+              },
+              {
+                "when": "minecraft:rarity/leg/leg",
+                "model": {
+                  "type": "model",
+                  "model": "minecraft:item/custom/rarity/leg/golden_chestplate"
+                }
+              },
+              {
+                "when": "minecraft:rarity/leg_armset/leg_armset",
+                "model": {
+                  "type": "model",
+                  "model": "minecraft:item/custom/rarity/leg_armset/golden_chestplate"
+                }
+              }
+            ],
+            "fallback": {
+              "type": "model",
+              "model": "minecraft:item/golden_chestplate"
+            }
+          }
+        }
+      ],
+      "fallback": {
+        "type": "model",
+        "model": "minecraft:item/golden_chestplate"
+      }
     },
     "property": "minecraft:trim_material"
   }

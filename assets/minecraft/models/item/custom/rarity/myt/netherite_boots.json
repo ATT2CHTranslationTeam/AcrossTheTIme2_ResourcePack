@@ -1,0 +1,6 @@
+{
+    "parent": "item/netherite_boots",
+    "textures": {
+        "layer1": "item/custom/rarity/myt"
+    }
+}
