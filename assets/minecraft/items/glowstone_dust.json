@@ -16,8 +16,22 @@
                         {
                             "when": "gui",
                             "model": {
-                                "type": "model",
-                                "model": "minecraft:item/custom/rarity/rune/empty"
+                                "type": "select",
+                                "property": "component",
+                                "component": "tooltip_style",
+                                "cases": [
+                                    {
+                                        "when": "minecraft:rarity/misc/misc",
+                                        "model": {
+                                            "type": "model",
+                                            "model": "minecraft:item/custom/rarity/rune/empty"
+                                        }
+                                    }
+                                ],
+                                "fallback": {
+                                    "type": "model",
+                                    "model": "minecraft:item/custom/runes/empty"
+                                }
                             }
                         }
                     ],
@@ -36,8 +50,22 @@
                         {
                             "when": "gui",
                             "model": {
-                                "type": "model",
-                                "model": "minecraft:item/custom/rarity/rune/gal"
+                                "type": "select",
+                                "property": "component",
+                                "component": "tooltip_style",
+                                "cases": [
+                                    {
+                                        "when": "minecraft:rarity/rune/rune_low",
+                                        "model": {
+                                            "type": "model",
+                                            "model": "minecraft:item/custom/rarity/rune/gal"
+                                        }
+                                    }
+                                ],
+                                "fallback": {
+                                    "type": "model",
+                                    "model": "minecraft:item/custom/runes/gal"
+                                }
                             }
                         }
                     ],
@@ -56,8 +84,22 @@
                         {
                             "when": "gui",
                             "model": {
-                                "type": "model",
-                                "model": "minecraft:item/custom/rarity/rune/tha"
+                                "type": "select",
+                                "property": "component",
+                                "component": "tooltip_style",
+                                "cases": [
+                                    {
+                                        "when": "minecraft:rarity/rune/rune_low",
+                                        "model": {
+                                            "type": "model",
+                                            "model": "minecraft:item/custom/rarity/rune/tha"
+                                        }
+                                    }
+                                ],
+                                "fallback": {
+                                    "type": "model",
+                                    "model": "minecraft:item/custom/runes/tha"
+                                }
                             }
                         }
                     ],
@@ -76,8 +118,22 @@
                         {
                             "when": "gui",
                             "model": {
-                                "type": "model",
-                                "model": "minecraft:item/custom/rarity/rune/fus"
+                                "type": "select",
+                                "property": "component",
+                                "component": "tooltip_style",
+                                "cases": [
+                                    {
+                                        "when": "minecraft:rarity/rune/rune_low",
+                                        "model": {
+                                            "type": "model",
+                                            "model": "minecraft:item/custom/rarity/rune/fus"
+                                        }
+                                    }
+                                ],
+                                "fallback": {
+                                    "type": "model",
+                                    "model": "minecraft:item/custom/runes/fus"
+                                }
                             }
                         }
                     ],
@@ -96,8 +152,22 @@
                         {
                             "when": "gui",
                             "model": {
-                                "type": "model",
-                                "model": "minecraft:item/custom/rarity/rune/org"
+                                "type": "select",
+                                "property": "component",
+                                "component": "tooltip_style",
+                                "cases": [
+                                    {
+                                        "when": "minecraft:rarity/rune/rune_low",
+                                        "model": {
+                                            "type": "model",
+                                            "model": "minecraft:item/custom/rarity/rune/org"
+                                        }
+                                    }
+                                ],
+                                "fallback": {
+                                    "type": "model",
+                                    "model": "minecraft:item/custom/runes/org"
+                                }
                             }
                         }
                     ],
@@ -116,8 +186,22 @@
                         {
                             "when": "gui",
                             "model": {
-                                "type": "model",
-                                "model": "minecraft:item/custom/rarity/rune/jo"
+                                "type": "select",
+                                "property": "component",
+                                "component": "tooltip_style",
+                                "cases": [
+                                    {
+                                        "when": "minecraft:rarity/rune/rune_low",
+                                        "model": {
+                                            "type": "model",
+                                            "model": "minecraft:item/custom/rarity/rune/jo"
+                                        }
+                                    }
+                                ],
+                                "fallback": {
+                                    "type": "model",
+                                    "model": "minecraft:item/custom/runes/jo"
+                                }
                             }
                         }
                     ],
@@ -136,8 +220,22 @@
                         {
                             "when": "gui",
                             "model": {
-                                "type": "model",
-                                "model": "minecraft:item/custom/rarity/rune/ra"
+                                "type": "select",
+                                "property": "component",
+                                "component": "tooltip_style",
+                                "cases": [
+                                    {
+                                        "when": "minecraft:rarity/rune/rune_low",
+                                        "model": {
+                                            "type": "model",
+                                            "model": "minecraft:item/custom/rarity/rune/ra"
+                                        }
+                                    }
+                                ],
+                                "fallback": {
+                                    "type": "model",
+                                    "model": "minecraft:item/custom/runes/ra"
+                                }
                             }
                         }
                     ],
@@ -156,8 +254,22 @@
                         {
                             "when": "gui",
                             "model": {
-                                "type": "model",
-                                "model": "minecraft:item/custom/rarity/rune/nym"
+                                "type": "select",
+                                "property": "component",
+                                "component": "tooltip_style",
+                                "cases": [
+                                    {
+                                        "when": "minecraft:rarity/rune/rune_low",
+                                        "model": {
+                                            "type": "model",
+                                            "model": "minecraft:item/custom/rarity/rune/nym"
+                                        }
+                                    }
+                                ],
+                                "fallback": {
+                                    "type": "model",
+                                    "model": "minecraft:item/custom/runes/nym"
+                                }
                             }
                         }
                     ],
@@ -176,8 +288,22 @@
                         {
                             "when": "gui",
                             "model": {
-                                "type": "model",
-                                "model": "minecraft:item/custom/rarity/rune/inu"
+                                "type": "select",
+                                "property": "component",
+                                "component": "tooltip_style",
+                                "cases": [
+                                    {
+                                        "when": "minecraft:rarity/rune/rune_low",
+                                        "model": {
+                                            "type": "model",
+                                            "model": "minecraft:item/custom/rarity/rune/inu"
+                                        }
+                                    }
+                                ],
+                                "fallback": {
+                                    "type": "model",
+                                    "model": "minecraft:item/custom/runes/inu"
+                                }
                             }
                         }
                     ],
@@ -196,8 +322,22 @@
                         {
                             "when": "gui",
                             "model": {
-                                "type": "model",
-                                "model": "minecraft:item/custom/rarity/rune/hal"
+                                "type": "select",
+                                "property": "component",
+                                "component": "tooltip_style",
+                                "cases": [
+                                    {
+                                        "when": "minecraft:rarity/rune/rune_low",
+                                        "model": {
+                                            "type": "model",
+                                            "model": "minecraft:item/custom/rarity/rune/hal"
+                                        }
+                                    }
+                                ],
+                                "fallback": {
+                                    "type": "model",
+                                    "model": "minecraft:item/custom/runes/hal"
+                                }
                             }
                         }
                     ],
@@ -216,8 +356,22 @@
                         {
                             "when": "gui",
                             "model": {
-                                "type": "model",
-                                "model": "minecraft:item/custom/rarity/rune/von"
+                                "type": "select",
+                                "property": "component",
+                                "component": "tooltip_style",
+                                "cases": [
+                                    {
+                                        "when": "minecraft:rarity/rune/rune_medium",
+                                        "model": {
+                                            "type": "model",
+                                            "model": "minecraft:item/custom/rarity/rune/von"
+                                        }
+                                    }
+                                ],
+                                "fallback": {
+                                    "type": "model",
+                                    "model": "minecraft:item/custom/runes/von"
+                                }
                             }
                         }
                     ],
@@ -236,8 +390,22 @@
                         {
                             "when": "gui",
                             "model": {
-                                "type": "model",
-                                "model": "minecraft:item/custom/rarity/rune/ehl"
+                                "type": "select",
+                                "property": "component",
+                                "component": "tooltip_style",
+                                "cases": [
+                                    {
+                                        "when": "minecraft:rarity/rune/rune_medium",
+                                        "model": {
+                                            "type": "model",
+                                            "model": "minecraft:item/custom/rarity/rune/ehl"
+                                        }
+                                    }
+                                ],
+                                "fallback": {
+                                    "type": "model",
+                                    "model": "minecraft:item/custom/runes/ehl"
+                                }
                             }
                         }
                     ],
@@ -256,8 +424,22 @@
                         {
                             "when": "gui",
                             "model": {
-                                "type": "model",
-                                "model": "minecraft:item/custom/rarity/rune/ave"
+                                "type": "select",
+                                "property": "component",
+                                "component": "tooltip_style",
+                                "cases": [
+                                    {
+                                        "when": "minecraft:rarity/rune/rune_medium",
+                                        "model": {
+                                            "type": "model",
+                                            "model": "minecraft:item/custom/rarity/rune/ave"
+                                        }
+                                    }
+                                ],
+                                "fallback": {
+                                    "type": "model",
+                                    "model": "minecraft:item/custom/runes/ave"
+                                }
                             }
                         }
                     ],
@@ -276,8 +458,22 @@
                         {
                             "when": "gui",
                             "model": {
-                                "type": "model",
-                                "model": "minecraft:item/custom/rarity/rune/chu"
+                                "type": "select",
+                                "property": "component",
+                                "component": "tooltip_style",
+                                "cases": [
+                                    {
+                                        "when": "minecraft:rarity/rune/rune_medium",
+                                        "model": {
+                                            "type": "model",
+                                            "model": "minecraft:item/custom/rarity/rune/chu"
+                                        }
+                                    }
+                                ],
+                                "fallback": {
+                                    "type": "model",
+                                    "model": "minecraft:item/custom/runes/chu"
+                                }
                             }
                         }
                     ],
@@ -296,8 +492,22 @@
                         {
                             "when": "gui",
                             "model": {
-                                "type": "model",
-                                "model": "minecraft:item/custom/rarity/rune/for"
+                                "type": "select",
+                                "property": "component",
+                                "component": "tooltip_style",
+                                "cases": [
+                                    {
+                                        "when": "minecraft:rarity/rune/rune_medium",
+                                        "model": {
+                                            "type": "model",
+                                            "model": "minecraft:item/custom/rarity/rune/for"
+                                        }
+                                    }
+                                ],
+                                "fallback": {
+                                    "type": "model",
+                                    "model": "minecraft:item/custom/runes/for"
+                                }
                             }
                         }
                     ],
@@ -316,8 +526,22 @@
                         {
                             "when": "gui",
                             "model": {
-                                "type": "model",
-                                "model": "minecraft:item/custom/rarity/rune/da"
+                                "type": "select",
+                                "property": "component",
+                                "component": "tooltip_style",
+                                "cases": [
+                                    {
+                                        "when": "minecraft:rarity/rune/rune_medium",
+                                        "model": {
+                                            "type": "model",
+                                            "model": "minecraft:item/custom/rarity/rune/da"
+                                        }
+                                    }
+                                ],
+                                "fallback": {
+                                    "type": "model",
+                                    "model": "minecraft:item/custom/runes/da"
+                                }
                             }
                         }
                     ],
@@ -336,8 +560,22 @@
                         {
                             "when": "gui",
                             "model": {
-                                "type": "model",
-                                "model": "minecraft:item/custom/rarity/rune/wej"
+                                "type": "select",
+                                "property": "component",
+                                "component": "tooltip_style",
+                                "cases": [
+                                    {
+                                        "when": "minecraft:rarity/rune/rune_medium",
+                                        "model": {
+                                            "type": "model",
+                                            "model": "minecraft:item/custom/rarity/rune/wej"
+                                        }
+                                    }
+                                ],
+                                "fallback": {
+                                    "type": "model",
+                                    "model": "minecraft:item/custom/runes/wej"
+                                }
                             }
                         }
                     ],
@@ -356,8 +594,22 @@
                         {
                             "when": "gui",
                             "model": {
-                                "type": "model",
-                                "model": "minecraft:item/custom/rarity/rune/ust"
+                                "type": "select",
+                                "property": "component",
+                                "component": "tooltip_style",
+                                "cases": [
+                                    {
+                                        "when": "minecraft:rarity/rune/rune_medium",
+                                        "model": {
+                                            "type": "model",
+                                            "model": "minecraft:item/custom/rarity/rune/ust"
+                                        }
+                                    }
+                                ],
+                                "fallback": {
+                                    "type": "model",
+                                    "model": "minecraft:item/custom/runes/ust"
+                                }
                             }
                         }
                     ],
@@ -376,8 +628,22 @@
                         {
                             "when": "gui",
                             "model": {
-                                "type": "model",
-                                "model": "minecraft:item/custom/rarity/rune/lya"
+                                "type": "select",
+                                "property": "component",
+                                "component": "tooltip_style",
+                                "cases": [
+                                    {
+                                        "when": "minecraft:rarity/rune/rune_medium",
+                                        "model": {
+                                            "type": "model",
+                                            "model": "minecraft:item/custom/rarity/rune/lya"
+                                        }
+                                    }
+                                ],
+                                "fallback": {
+                                    "type": "model",
+                                    "model": "minecraft:item/custom/runes/lya"
+                                }
                             }
                         }
                     ],
@@ -396,8 +662,22 @@
                         {
                             "when": "gui",
                             "model": {
-                                "type": "model",
-                                "model": "minecraft:item/custom/rarity/rune/qi"
+                                "type": "select",
+                                "property": "component",
+                                "component": "tooltip_style",
+                                "cases": [
+                                    {
+                                        "when": "minecraft:rarity/rune/rune_high",
+                                        "model": {
+                                            "type": "model",
+                                            "model": "minecraft:item/custom/rarity/rune/qi"
+                                        }
+                                    }
+                                ],
+                                "fallback": {
+                                    "type": "model",
+                                    "model": "minecraft:item/custom/runes/qi"
+                                }
                             }
                         }
                     ],
@@ -416,8 +696,22 @@
                         {
                             "when": "gui",
                             "model": {
-                                "type": "model",
-                                "model": "minecraft:item/custom/rarity/rune/bex"
+                                "type": "select",
+                                "property": "component",
+                                "component": "tooltip_style",
+                                "cases": [
+                                    {
+                                        "when": "minecraft:rarity/rune/rune_high",
+                                        "model": {
+                                            "type": "model",
+                                            "model": "minecraft:item/custom/rarity/rune/bex"
+                                        }
+                                    }
+                                ],
+                                "fallback": {
+                                    "type": "model",
+                                    "model": "minecraft:item/custom/runes/bex"
+                                }
                             }
                         }
                     ],
@@ -436,8 +730,22 @@
                         {
                             "when": "gui",
                             "model": {
-                                "type": "model",
-                                "model": "minecraft:item/custom/rarity/rune/puh"
+                                "type": "select",
+                                "property": "component",
+                                "component": "tooltip_style",
+                                "cases": [
+                                    {
+                                        "when": "minecraft:rarity/rune/rune_high",
+                                        "model": {
+                                            "type": "model",
+                                            "model": "minecraft:item/custom/rarity/rune/puh"
+                                        }
+                                    }
+                                ],
+                                "fallback": {
+                                    "type": "model",
+                                    "model": "minecraft:item/custom/runes/puh"
+                                }
                             }
                         }
                     ],
@@ -456,8 +764,22 @@
                         {
                             "when": "gui",
                             "model": {
-                                "type": "model",
-                                "model": "minecraft:item/custom/rarity/rune/syl"
+                                "type": "select",
+                                "property": "component",
+                                "component": "tooltip_style",
+                                "cases": [
+                                    {
+                                        "when": "minecraft:rarity/rune/rune_high",
+                                        "model": {
+                                            "type": "model",
+                                            "model": "minecraft:item/custom/rarity/rune/syl"
+                                        }
+                                    }
+                                ],
+                                "fallback": {
+                                    "type": "model",
+                                    "model": "minecraft:item/custom/runes/syl"
+                                }
                             }
                         }
                     ],
@@ -476,8 +798,22 @@
                         {
                             "when": "gui",
                             "model": {
-                                "type": "model",
-                                "model": "minecraft:item/custom/rarity/rune/yog"
+                                "type": "select",
+                                "property": "component",
+                                "component": "tooltip_style",
+                                "cases": [
+                                    {
+                                        "when": "minecraft:rarity/rune/rune_high",
+                                        "model": {
+                                            "type": "model",
+                                            "model": "minecraft:item/custom/rarity/rune/yog"
+                                        }
+                                    }
+                                ],
+                                "fallback": {
+                                    "type": "model",
+                                    "model": "minecraft:item/custom/runes/yog"
+                                }
                             }
                         }
                     ],
@@ -496,8 +832,22 @@
                         {
                             "when": "gui",
                             "model": {
-                                "type": "model",
-                                "model": "minecraft:item/custom/rarity/rune/kan"
+                                "type": "select",
+                                "property": "component",
+                                "component": "tooltip_style",
+                                "cases": [
+                                    {
+                                        "when": "minecraft:rarity/rune/rune_high",
+                                        "model": {
+                                            "type": "model",
+                                            "model": "minecraft:item/custom/rarity/rune/kan"
+                                        }
+                                    }
+                                ],
+                                "fallback": {
+                                    "type": "model",
+                                    "model": "minecraft:item/custom/runes/kan"
+                                }
                             }
                         }
                     ],
@@ -516,8 +866,22 @@
                         {
                             "when": "gui",
                             "model": {
-                                "type": "model",
-                                "model": "minecraft:item/custom/rarity/rune/xul"
+                                "type": "select",
+                                "property": "component",
+                                "component": "tooltip_style",
+                                "cases": [
+                                    {
+                                        "when": "minecraft:rarity/rune/rune_high",
+                                        "model": {
+                                            "type": "model",
+                                            "model": "minecraft:item/custom/rarity/rune/xul"
+                                        }
+                                    }
+                                ],
+                                "fallback": {
+                                    "type": "model",
+                                    "model": "minecraft:item/custom/runes/xul"
+                                }
                             }
                         }
                     ],
@@ -536,8 +900,22 @@
                         {
                             "when": "gui",
                             "model": {
-                                "type": "model",
-                                "model": "minecraft:item/custom/rarity/rune/zen"
+                                "type": "select",
+                                "property": "component",
+                                "component": "tooltip_style",
+                                "cases": [
+                                    {
+                                        "when": "minecraft:rarity/rune/rune_high",
+                                        "model": {
+                                            "type": "model",
+                                            "model": "minecraft:item/custom/rarity/rune/zen"
+                                        }
+                                    }
+                                ],
+                                "fallback": {
+                                    "type": "model",
+                                    "model": "minecraft:item/custom/runes/zen"
+                                }
                             }
                         }
                     ],
@@ -556,8 +934,22 @@
                         {
                             "when": "gui",
                             "model": {
-                                "type": "model",
-                                "model": "minecraft:item/custom/rarity/rune/mot"
+                                "type": "select",
+                                "property": "component",
+                                "component": "tooltip_style",
+                                "cases": [
+                                    {
+                                        "when": "minecraft:rarity/rune/rune_high",
+                                        "model": {
+                                            "type": "model",
+                                            "model": "minecraft:item/custom/rarity/rune/mot"
+                                        }
+                                    }
+                                ],
+                                "fallback": {
+                                    "type": "model",
+                                    "model": "minecraft:item/custom/runes/mot"
+                                }
                             }
                         }
                     ],

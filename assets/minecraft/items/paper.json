@@ -57,14 +57,14 @@
                 ],
                 "fallback": {
                   "type": "model",
-                  "model": "minecraft:item/sylberland_1"
+                  "model": "minecraft:item/custom/map/sylberland_1"
                 }
               }
             }
           ],
           "fallback": {
             "type": "model",
-            "model": "minecraft:item/sylberland_1"
+            "model": "minecraft:item/custom/map/sylberland_1"
           }
         }
       },
@@ -91,14 +91,14 @@
                 ],
                 "fallback": {
                   "type": "model",
-                  "model": "minecraft:item/sylberland_2"
+                  "model": "minecraft:item/custom/map/sylberland_2"
                 }
               }
             }
           ],
           "fallback": {
             "type": "model",
-            "model": "minecraft:item/sylberland_2"
+            "model": "minecraft:item/custom/map/sylberland_2"
           }
         }
       },
@@ -125,14 +125,14 @@
                 ],
                 "fallback": {
                   "type": "model",
-                  "model": "minecraft:item/sylberland_3"
+                  "model": "minecraft:item/custom/map/sylberland_3"
                 }
               }
             }
           ],
           "fallback": {
             "type": "model",
-            "model": "minecraft:item/sylberland_3"
+            "model": "minecraft:item/custom/map/sylberland_3"
           }
         }
       },
@@ -159,14 +159,14 @@
                 ],
                 "fallback": {
                   "type": "model",
-                  "model": "minecraft:item/sylberland_4"
+                  "model": "minecraft:item/custom/map/sylberland_4"
                 }
               }
             }
           ],
           "fallback": {
             "type": "model",
-            "model": "minecraft:item/sylberland_4"
+            "model": "minecraft:item/custom/map/sylberland_4"
           }
         }
       },
@@ -193,14 +193,14 @@
                 ],
                 "fallback": {
                   "type": "model",
-                  "model": "minecraft:item/sylberland_5"
+                  "model": "minecraft:item/custom/map/sylberland_5"
                 }
               }
             }
           ],
           "fallback": {
             "type": "model",
-            "model": "minecraft:item/sylberland_5"
+            "model": "minecraft:item/custom/map/sylberland_5"
           }
         }
       },
@@ -227,14 +227,14 @@
                 ],
                 "fallback": {
                   "type": "model",
-                  "model": "minecraft:item/sylberland_6"
+                  "model": "minecraft:item/custom/map/sylberland_6"
                 }
               }
             }
           ],
           "fallback": {
             "type": "model",
-            "model": "minecraft:item/sylberland_6"
+            "model": "minecraft:item/custom/map/sylberland_6"
           }
         }
       },
@@ -261,14 +261,14 @@
                 ],
                 "fallback": {
                   "type": "model",
-                  "model": "minecraft:item/sylberland_7"
+                  "model": "minecraft:item/custom/map/sylberland_7"
                 }
               }
             }
           ],
           "fallback": {
             "type": "model",
-            "model": "minecraft:item/sylberland_7"
+            "model": "minecraft:item/custom/map/sylberland_7"
           }
         }
       },
@@ -295,14 +295,14 @@
                 ],
                 "fallback": {
                   "type": "model",
-                  "model": "minecraft:item/sylberland_11"
+                  "model": "minecraft:item/custom/map/sylberland_11"
                 }
               }
             }
           ],
           "fallback": {
             "type": "model",
-            "model": "minecraft:item/sylberland_11"
+            "model": "minecraft:item/custom/map/sylberland_11"
           }
         }
       },
@@ -329,14 +329,14 @@
                 ],
                 "fallback": {
                   "type": "model",
-                  "model": "minecraft:item/sylberland_21"
+                  "model": "minecraft:item/custom/map/sylberland_21"
                 }
               }
             }
           ],
           "fallback": {
             "type": "model",
-            "model": "minecraft:item/sylberland_21"
+            "model": "minecraft:item/custom/map/sylberland_21"
           }
         }
       },
@@ -363,14 +363,14 @@
                 ],
                 "fallback": {
                   "type": "model",
-                  "model": "minecraft:item/sylberland_31"
+                  "model": "minecraft:item/custom/map/sylberland_31"
                 }
               }
             }
           ],
           "fallback": {
             "type": "model",
-            "model": "minecraft:item/sylberland_31"
+            "model": "minecraft:item/custom/map/sylberland_31"
           }
         }
       },
@@ -397,14 +397,14 @@
                 ],
                 "fallback": {
                   "type": "model",
-                  "model": "minecraft:item/sylberland_41"
+                  "model": "minecraft:item/custom/map/sylberland_41"
                 }
               }
             }
           ],
           "fallback": {
             "type": "model",
-            "model": "minecraft:item/sylberland_41"
+            "model": "minecraft:item/custom/map/sylberland_41"
           }
         }
       },
@@ -431,14 +431,14 @@
                 ],
                 "fallback": {
                   "type": "model",
-                  "model": "minecraft:item/sylberland_51"
+                  "model": "minecraft:item/custom/map/sylberland_51"
                 }
               }
             }
           ],
           "fallback": {
             "type": "model",
-            "model": "minecraft:item/sylberland_51"
+            "model": "minecraft:item/custom/map/sylberland_51"
           }
         }
       },
@@ -465,14 +465,14 @@
                 ],
                 "fallback": {
                   "type": "model",
-                  "model": "minecraft:item/sylberland_61"
+                  "model": "minecraft:item/custom/map/sylberland_61"
                 }
               }
             }
           ],
           "fallback": {
             "type": "model",
-            "model": "minecraft:item/sylberland_61"
+            "model": "minecraft:item/custom/map/sylberland_61"
           }
         }
       },
@@ -499,14 +499,14 @@
                 ],
                 "fallback": {
                   "type": "model",
-                  "model": "minecraft:item/sylberland_71"
+                  "model": "minecraft:item/custom/map/sylberland_71"
                 }
               }
             }
           ],
           "fallback": {
             "type": "model",
-            "model": "minecraft:item/sylberland_71"
+            "model": "minecraft:item/custom/map/sylberland_71"
           }
         }
       },

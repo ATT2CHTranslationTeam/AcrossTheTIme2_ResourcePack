@@ -6,8 +6,22 @@
       {
         "when": "gui",
         "model": {
-          "type": "model",
-          "model": "minecraft:item/custom/rarity/quest/clay_ball"
+          "type": "select",
+          "property": "component",
+          "component": "tooltip_style",
+          "cases": [
+            {
+              "when": "minecraft:rarity/quest/quest",
+              "model": {
+                "type": "model",
+                "model": "minecraft:item/custom/rarity/quest/clay_ball"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "model",
+            "model": "minecraft:item/clay_ball"
+          }
         }
       }
     ],

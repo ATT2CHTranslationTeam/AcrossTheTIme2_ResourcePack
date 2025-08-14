@@ -1,0 +1,6 @@
+{
+    "parent": "item/redstone_torch",
+    "textures": {
+        "layer1": "item/custom/rarity/misc"
+    }
+}
