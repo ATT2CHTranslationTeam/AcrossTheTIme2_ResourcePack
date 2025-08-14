@@ -6,8 +6,22 @@
       {
         "when": "gui",
         "model": {
-          "type": "model",
-          "model": "minecraft:item/custom/rarity/quest/bone"
+          "type": "select",
+          "property": "component",
+          "component": "tooltip_style",
+          "cases": [
+            {
+              "when": "minecraft:rarity/quest/quest",
+              "model": {
+                "type": "model",
+                "model": "minecraft:item/custom/rarity/quest/bone"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "model",
+            "model": "minecraft:item/bone"
+          }
         }
       }
     ],

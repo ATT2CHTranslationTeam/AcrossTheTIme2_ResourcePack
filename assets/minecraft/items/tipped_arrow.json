@@ -6,14 +6,34 @@
       {
         "when": "gui",
         "model": {
-          "type": "model",
-          "model": "minecraft:item/custom/rarity/misc/tipped_arrow",
-          "tints": [
+          "type": "select",
+          "property": "component",
+          "component": "tooltip_style",
+          "cases": [
             {
-              "type": "minecraft:potion",
-              "default": -13083194
+              "when": "minecraft:rarity/misc/misc",
+              "model": {
+                "type": "model",
+                "model": "minecraft:item/custom/rarity/misc/tipped_arrow",
+                "tints": [
+                  {
+                    "type": "minecraft:potion",
+                    "default": -13083194
+                  }
+                ]
+              }
             }
-          ]
+          ],
+          "fallback": {
+            "type": "model",
+            "model": "minecraft:item/tipped_arrow",
+            "tints": [
+              {
+                "type": "minecraft:potion",
+                "default": -13083194
+              }
+            ]
+          }
         }
       }
     ],

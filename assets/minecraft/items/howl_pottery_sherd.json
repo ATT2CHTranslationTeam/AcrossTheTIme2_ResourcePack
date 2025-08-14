@@ -6,8 +6,22 @@
       {
         "when": "gui",
         "model": {
-          "type": "model",
-          "model": "minecraft:item/custom/rarity/epi/howl_pottery_sherd"
+          "type": "select",
+          "property": "component",
+          "component": "tooltip_style",
+          "cases": [
+            {
+              "when": "minecraft:rarity/epi/epi",
+              "model": {
+                "type": "model",
+                "model": "minecraft:item/custom/rarity/epi/howl_pottery_sherd"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "model",
+            "model": "minecraft:item/howl_pottery_sherd"
+          }
         }
       }
     ],

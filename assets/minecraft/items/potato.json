@@ -6,8 +6,22 @@
       {
         "when": "gui",
         "model": {
-          "type": "model",
-          "model": "minecraft:item/custom/rarity/misc/potato"
+          "type": "select",
+          "property": "component",
+          "component": "tooltip_style",
+          "cases": [
+            {
+              "when": "minecraft:rarity/misc/misc",
+              "model": {
+                "type": "model",
+                "model": "minecraft:item/custom/rarity/misc/potato"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "model",
+            "model": "minecraft:item/potato"
+          }
         }
       }
     ],

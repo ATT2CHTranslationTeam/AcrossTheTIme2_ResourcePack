@@ -214,18 +214,17 @@
             }
           ],
           "fallback": {
-            "type": "select",
-            "property": "display_context",
-            "cases": [
-              {
-                "when": "gui",
-                "model": {
-                  "type": "model",
-                  "model": "minecraft:item/custom/rarity/misc/written_book"
-                }
-              }
-            ],
-            "fallback": {
+            "type": "condition",
+            "property": "component",
+            "predicate": "minecraft:custom_data",
+            "value": {
+              "Dahal": "book"
+            },
+            "on_true": {
+              "type": "model",
+              "model": "minecraft:item/enchanted_book"
+            },
+            "on_false": {
               "type": "model",
               "model": "minecraft:item/written_book"
             }
@@ -234,8 +233,20 @@
       }
     ],
     "fallback": {
-      "type": "minecraft:model",
-      "model": "minecraft:item/enchanted_book"
+      "type": "condition",
+      "property": "component",
+      "predicate": "minecraft:custom_data",
+      "value": {
+        "Dahal": "book"
+      },
+      "on_true": {
+        "type": "model",
+        "model": "minecraft:item/enchanted_book"
+      },
+      "on_false": {
+        "type": "model",
+        "model": "minecraft:item/written_book"
+      }
     }
   }
 }

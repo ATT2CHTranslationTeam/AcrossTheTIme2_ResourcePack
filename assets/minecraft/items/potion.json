@@ -87,17 +87,30 @@
                   }
                 ]
               }
-            }
-          ],
-          "fallback": {
-            "type": "model",
-            "model": "minecraft:item/potion",
+            },
+            {
+              "when": "minecraft:rarity/myt/myt",
+              "model": {
+                "type": "model",
+                "model": "minecraft:item/custom/rarity/myt/potion",
                 "tints": [
                   {
                     "type": "minecraft:potion",
                     "default": -13083194
                   }
                 ]
+              }
+            }
+          ],
+          "fallback": {
+            "type": "model",
+            "model": "minecraft:item/potion",
+            "tints": [
+              {
+                "type": "minecraft:potion",
+                "default": -13083194
+              }
+            ]
           }
         }
       }
@@ -105,12 +118,12 @@
     "fallback": {
       "type": "model",
       "model": "minecraft:item/potion",
-                "tints": [
-                  {
-                    "type": "minecraft:potion",
-                    "default": -13083194
-                  }
-                ]
+      "tints": [
+        {
+          "type": "minecraft:potion",
+          "default": -13083194
+        }
+      ]
     }
   }
 }
