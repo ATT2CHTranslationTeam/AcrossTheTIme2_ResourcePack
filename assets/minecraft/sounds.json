@@ -2,7 +2,7 @@
     "empty": {
         "sounds": [
             {
-                "name": "empty",
+                "name": "music/empty",
                 "stream": true
             }
         ]
@@ -11,19 +11,19 @@
         "replace":true, 
         "sounds": [
             {
-                "name": "menu1",
+                "name": "music/menu/menu1",
                 "stream": true
             },
             {
-                "name": "menu2",
+                "name": "music/menu/menu2",
                 "stream": true
             },
             {
-                "name": "menu3",
+                "name": "music/menu/menu3",
                 "stream": true
             },
             {
-                "name": "menu4",
+                "name": "music/menu/menu4",
                 "stream": true
             }
         ]

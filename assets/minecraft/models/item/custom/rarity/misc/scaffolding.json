@@ -1,0 +1,6 @@
+{
+    "parent": "block/scaffolding",
+    "textures": {
+        "layer1": "item/custom/rarity/misc"
+    }
+}

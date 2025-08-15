@@ -1,0 +1,6 @@
+{
+    "parent": "item/crossbow_pulling_1",
+    "textures": {
+        "layer1": "item/custom/rarity/epi"
+    }
+}

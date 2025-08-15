@@ -1,0 +1,6 @@
+{
+    "parent": "item/crossbow_arrow",
+    "textures": {
+        "layer1": "item/custom/rarity/leg"
+    }
+}
